@@ -1,0 +1,145 @@
+/* ==========================================
+   🖱️ INSTANT MOUSE RESPONSE FIX
+   ========================================== */
+
+/* Disable custom cursor animations that cause lag */
+.cursor-dot,
+.cursor-outline {
+    transition: none !important;
+    animation: none !important;
+}
+
+/* Instant cursor positioning */
+.cursor-dot {
+    width: 8px;
+    height: 8px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 10000;
+    box-shadow: 0 0 10px var(--primary-color);
+    transition: none !important;
+}
+
+.cursor-outline {
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.5;
+    transition: none !important;
+}
+
+/* Remove slow cursor transitions from other files */
+body:hover .cursor-dot {
+    transform: scale(1.5);
+    transition: transform 0.05s ease !important;
+}
+
+button:hover ~ .cursor-outline,
+a:hover ~ .cursor-outline,
+input:hover ~ .cursor-outline,
+select:hover ~ .cursor-outline {
+    transform: scale(1.5);
+    opacity: 1;
+    transition: all 0.05s ease !important;
+}
+
+/* Instant hover effects - remove delays */
+button,
+a,
+input,
+select,
+.btn,
+.nav-link,
+.feature-card,
+.tracker-card,
+.stat-box {
+    transition: all 0.15s ease !important;
+}
+
+/* Fast click response */
+button:active,
+a:active,
+.btn:active {
+    transition: all 0.05s ease !important;
+}
+
+/* Override smooth-animations.css cursor settings */
+* {
+    cursor: default !important;
+}
+
+button,
+a,
+.btn,
+input[type="submit"],
+select {
+    cursor: pointer !important;
+}
+
+input,
+textarea {
+    cursor: text !important;
+}
+
+/* Faster scroll performance */
+* {
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Instant feedback on interactive elements */
+.stat-box:hover,
+.car-card:hover,
+.flip-card:hover {
+    transition: transform 0.15s ease !important;
+}
+
+/* Remove laggy animations on mouse interaction */
+@media (pointer: fine) {
+    * {
+        transition-duration: 0.15s !important;
+    }
+    
+    .cursor-dot,
+    .cursor-outline {
+        transition: none !important;
+    }
+}
+
+/* Performance optimization for mouse tracking */
+body {
+    will-change: auto;
+}
+
+.cursor-dot,
+.cursor-outline {
+    will-change: transform;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+/* Reduce motion lag */
+@media (hover: hover) and (pointer: fine) {
+    button:hover,
+    a:hover,
+    .btn:hover {
+        transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    }
+}
+
+/* Mobile touch optimization */
+@media (hover: none) and (pointer: coarse) {
+    .cursor-dot,
+    .cursor-outline {
+        display: none !important;
+    }
+}

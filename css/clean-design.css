@@ -1,0 +1,607 @@
+/* ==========================================
+   🎨 CLEAN & SPACIOUS DESIGN OVERRIDES
+   ========================================== */
+
+/* Global spacing improvements */
+section {
+    padding: 120px 0 !important;
+}
+
+.section-container {
+    max-width: 1200px !important;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* Reduce visual clutter */
+body {
+    background: #0a0e27 !important;
+}
+
+/* Cleaner backgrounds - less busy */
+.gradient-mesh {
+    opacity: 0.15 !important;
+}
+
+.particle-canvas,
+#heroParticles,
+#particleCanvas {
+    opacity: 0.25 !important;
+}
+
+.floating-shape {
+    opacity: 0.3 !important;
+}
+
+.depth-lines {
+    opacity: 0.2 !important;
+}
+
+/* Cleaner hero section */
+.ultra-hero {
+    padding: 180px 40px 120px !important;
+    background: linear-gradient(180deg, #050816 0%, #0a0e27 100%) !important;
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero-title {
+    font-size: 64px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 30px !important;
+}
+
+.hero-subtitle {
+    font-size: 20px !important;
+    line-height: 1.8 !important;
+    margin-bottom: 50px !important;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Cleaner form with more space */
+.search-form {
+    padding: 50px !important;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 30px !important;
+}
+
+.form-group {
+    margin-bottom: 30px !important;
+}
+
+.form-group label {
+    font-size: 15px !important;
+    margin-bottom: 12px !important;
+}
+
+select,
+input[type="number"] {
+    padding: 16px 20px !important;
+    font-size: 16px !important;
+    border-radius: 15px !important;
+}
+
+.btn-primary {
+    padding: 18px 50px !important;
+    font-size: 18px !important;
+    border-radius: 50px !important;
+    margin-top: 20px !important;
+}
+
+/* Better section headers */
+.section-header,
+.section-header-modern {
+    margin-bottom: 80px !important;
+    text-align: center;
+}
+
+.section-title,
+.section-title-modern {
+    font-size: 48px !important;
+    margin-bottom: 20px !important;
+}
+
+.section-subtitle {
+    font-size: 18px !important;
+    line-height: 1.8 !important;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Card spacing improvements */
+.stat-card,
+.insight-card,
+.testimonial-card,
+.faq-item,
+.feature-card {
+    margin-bottom: 30px !important;
+    padding: 35px !important;
+    border-radius: 25px !important;
+}
+
+/* Grid improvements - more space */
+.stats-grid {
+    gap: 40px !important;
+    margin-top: 60px;
+}
+
+.insights-grid {
+    gap: 35px !important;
+}
+
+.testimonial-grid {
+    gap: 35px !important;
+}
+
+/* Cleaner cards - less visual noise */
+.stat-card,
+.insight-card,
+.feature-card,
+.testimonial-card {
+    background: rgba(255,255,255,0.03) !important;
+    border: 1px solid rgba(255,255,255,0.08) !important;
+    backdrop-filter: blur(10px) !important;
+}
+
+.stat-card:hover,
+.insight-card:hover,
+.feature-card:hover,
+.testimonial-card:hover {
+    background: rgba(255,255,255,0.05) !important;
+    border-color: rgba(0,174,239,0.3) !important;
+    transform: translateY(-8px) !important;
+}
+
+/* Remove excessive shadows */
+.card-3d:hover,
+.stat-card:hover,
+.insight-card:hover {
+    box-shadow: 0 15px 40px rgba(0,174,239,0.15) !important;
+}
+
+/* Cleaner icons - less glowing */
+.stat-icon,
+.insight-icon,
+.feature-icon {
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 15px !important;
+    background: linear-gradient(135deg, rgba(0,174,239,0.2), rgba(138,43,226,0.1)) !important;
+}
+
+.stat-icon i,
+.insight-icon i,
+.feature-icon i {
+    font-size: 24px !important;
+}
+
+/* Reduce orbit rings visibility */
+.orbit-ring {
+    opacity: 0.3 !important;
+}
+
+.icon-pulse,
+.badge-pulse {
+    opacity: 0.2 !important;
+}
+
+/* Cleaner navigation */
+.navbar {
+    padding: 20px 40px !important;
+    background: rgba(5, 8, 22, 0.7) !important;
+    backdrop-filter: blur(20px) !important;
+}
+
+.nav-link {
+    padding: 10px 20px !important;
+    font-size: 15px !important;
+}
+
+/* Better footer spacing */
+.ultra-footer {
+    padding-top: 100px !important;
+}
+
+.footer-hero {
+    margin-bottom: 80px !important;
+}
+
+.footer-nav-grid {
+    gap: 60px !important;
+    margin-bottom: 60px !important;
+}
+
+/* Reduce orb effects */
+.floating-orbs .orb-float,
+.footer-orbs .orb {
+    opacity: 0.4 !important;
+    filter: blur(100px) !important;
+}
+
+/* Cleaner mesh grid */
+.mesh-grid .mesh-line {
+    opacity: 0.15 !important;
+}
+
+/* Calculator section - cleaner */
+.ultra-calculator {
+    padding: 100px 40px !important;
+}
+
+.calculator-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Stats section - more breathing room */
+.ultra-stats {
+    padding: 100px 40px !important;
+}
+
+/* Testimonial improvements */
+.testimonial-content {
+    padding: 30px !important;
+    line-height: 1.9 !important;
+    font-size: 16px !important;
+}
+
+.testimonial-author {
+    margin-top: 25px !important;
+}
+
+/* FAQ - cleaner */
+.faq-item {
+    background: rgba(255,255,255,0.02) !important;
+    border: 1px solid rgba(255,255,255,0.08) !important;
+    margin-bottom: 20px !important;
+}
+
+.faq-question {
+    padding: 25px 30px !important;
+    font-size: 17px !important;
+}
+
+.faq-answer {
+    padding: 0 30px 30px !important;
+    font-size: 15px !important;
+    line-height: 1.8 !important;
+}
+
+/* Popular cars - better spacing */
+.car-card {
+    margin-bottom: 30px !important;
+    border-radius: 20px !important;
+}
+
+.car-image {
+    height: 220px !important;
+    border-radius: 20px 20px 0 0 !important;
+}
+
+.car-details {
+    padding: 25px !important;
+}
+
+/* Feature sections - cleaner */
+.price-tracker-section,
+.comparison-section,
+.recommendations-section,
+.heatmap-section {
+    padding: 100px 40px !important;
+}
+
+/* Revolutionary How It Works - less overwhelming */
+.revolutionary-how {
+    padding: 120px 40px !important;
+}
+
+.cards-3d-container {
+    gap: 50px !important;
+    margin-bottom: 80px !important;
+}
+
+.card-3d {
+    height: 650px !important;
+}
+
+.card-face {
+    padding: 45px !important;
+}
+
+/* Success metrics - cleaner */
+.success-metrics {
+    gap: 30px !important;
+    margin-bottom: 80px !important;
+}
+
+.metric-card {
+    padding: 35px !important;
+}
+
+/* Showroom - cleaner */
+.showroom-section {
+    padding: 100px 40px !important;
+}
+
+.showroom-wrapper {
+    gap: 40px !important;
+}
+
+/* Dealer network - better spacing */
+.dealer-network-section {
+    padding: 100px 40px !important;
+}
+
+.dealers-grid {
+    gap: 35px !important;
+    margin-top: 50px !important;
+}
+
+.dealer-card-modern {
+    border-radius: 25px !important;
+}
+
+/* Trade-in - cleaner */
+.tradein-modern-section {
+    padding: 100px 40px !important;
+}
+
+.tradein-wrapper {
+    gap: 50px !important;
+}
+
+/* Remove excessive animations on scroll */
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        animation-duration: 0.5s !important;
+        transition-duration: 0.3s !important;
+    }
+}
+
+/* Better typography hierarchy */
+h1 {
+    letter-spacing: -1px !important;
+}
+
+h2 {
+    letter-spacing: -0.5px !important;
+}
+
+h3 {
+    letter-spacing: 0 !important;
+}
+
+p {
+    line-height: 1.8 !important;
+}
+
+/* Reduce particle density */
+.icon-particles .particle {
+    opacity: 0.4 !important;
+}
+
+/* Cleaner badges */
+.hero-badge,
+.header-badge-epic,
+.section-tag {
+    padding: 12px 30px !important;
+    border-radius: 50px !important;
+    border-width: 1px !important;
+}
+
+/* Better button spacing */
+button,
+.btn,
+.cta-button {
+    margin: 10px 5px !important;
+}
+
+/* Cleaner inputs */
+input,
+select,
+textarea {
+    background: rgba(0,0,0,0.3) !important;
+    border: 2px solid rgba(255,255,255,0.1) !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: rgba(0,174,239,0.5) !important;
+    box-shadow: 0 0 0 3px rgba(0,174,239,0.1) !important;
+}
+
+/* Remove excessive glows */
+.card-glow-effect,
+.cta-glow-orb {
+    opacity: 0.3 !important;
+}
+
+/* Cleaner progress bars */
+.progress-bar {
+    height: 8px !important;
+    border-radius: 10px !important;
+}
+
+/* Better mobile spacing */
+@media (max-width: 768px) {
+    section {
+        padding: 80px 20px !important;
+    }
+    
+    .section-title {
+        font-size: 36px !important;
+    }
+    
+    .hero-title {
+        font-size: 42px !important;
+    }
+    
+    .search-form {
+        padding: 30px !important;
+    }
+}
+
+/* Reduce visual noise on charts */
+.chart-bar {
+    opacity: 0.8 !important;
+}
+
+/* Cleaner social links */
+.social-link {
+    width: 45px !important;
+    height: 45px !important;
+    margin: 0 8px !important;
+}
+
+/* Better list spacing */
+ul {
+    line-height: 2 !important;
+}
+
+li {
+    margin-bottom: 12px !important;
+}
+
+/* Cleaner feature pills */
+.feature-pill {
+    padding: 10px 20px !important;
+    margin: 5px !important;
+}
+
+/* Remove excessive decorations */
+.step-decoration,
+.deco-circle {
+    opacity: 0.2 !important;
+}
+
+/* Cleaner color picker */
+.color-option {
+    width: 45px !important;
+    height: 45px !important;
+    margin: 8px !important;
+}
+
+/* Better stat displays */
+.stat-value {
+    font-size: 36px !important;
+    margin-bottom: 8px !important;
+}
+
+.stat-label {
+    font-size: 14px !important;
+}
+
+/* Cleaner badges */
+.meta-badge,
+.dealer-badge {
+    padding: 8px 16px !important;
+    border-radius: 20px !important;
+}
+
+/* Better form layouts */
+.form-row {
+    gap: 25px !important;
+    margin-bottom: 25px !important;
+}
+
+/* Cleaner images */
+img {
+    border-radius: 20px !important;
+}
+
+/* Remove excessive borders */
+.border-glow,
+.neon-border {
+    display: none !important;
+}
+
+/* Cleaner timeline */
+.timeline-line {
+    opacity: 0.3 !important;
+}
+
+/* Better CTA sections */
+.epic-cta,
+.how-cta {
+    padding: 80px 40px !important;
+}
+
+/* Cleaner filters */
+.filter-chip {
+    padding: 12px 24px !important;
+    margin: 8px !important;
+    border-radius: 25px !important;
+}
+
+/* Less aggressive hovers */
+*:hover {
+    transition: all 0.3s ease !important;
+}
+
+/* Cleaner overlays */
+.vehicle-info-overlay {
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent) !important;
+}
+
+/* Better readability */
+p,
+span,
+li,
+label {
+    color: rgba(255,255,255,0.85) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: white !important;
+}
+
+/* Reduce glow effects */
+.icon-glow,
+.text-glow,
+.button-glow {
+    opacity: 0.5 !important;
+}
+
+/* Cleaner cursors */
+.cursor-dot,
+.cursor-outline {
+    opacity: 0.6 !important;
+}
+
+/* Better focus states */
+*:focus {
+    outline: 2px solid rgba(0,174,239,0.5) !important;
+    outline-offset: 3px !important;
+}
+
+/* Cleaner scrollbar */
+::-webkit-scrollbar {
+    width: 10px !important;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.05) !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0,174,239,0.5) !important;
+    border-radius: 5px !important;
+}
+
+/* Print-friendly */
+@media print {
+    .particle-canvas,
+    .gradient-mesh,
+    .floating-shape,
+    .cursor-dot,
+    .cursor-outline {
+        display: none !important;
+    }
+}

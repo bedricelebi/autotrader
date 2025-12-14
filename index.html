@@ -1,0 +1,3367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoTrader Global - Smart Car Flipping Platform</title>
+    <meta name="description" content="AI-powered car flipping intelligence. Find profitable cars to buy, fix, and resell with local market data." />
+
+    <!-- Preload critical CSS -->
+    <link rel="preload" href="css/style.css" as="style" />
+    <link rel="stylesheet" href="css/style.css" />
+    
+    <!-- Defer non-critical CSS -->
+    <link rel="stylesheet" href="css/new-features.css" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="css/new-features-part2.css" media="print" onload="this.media='all'" />
+    
+    <!-- Clean & Spacious Design -->
+    <link rel="stylesheet" href="css/clean-design.css" />
+    
+    <!-- Enhanced Modern Design -->
+    <link rel="stylesheet" href="css/enhanced-design.css" />
+    <link rel="stylesheet" href="css/smooth-animations.css" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="css/feature-fixes.css" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="css/instant-cursor.css" />
+    <link rel="stylesheet" href="css/hero-mindblowing.css" />
+    <link rel="stylesheet" href="css/hero-enhanced.css" />
+    
+    <!-- Font Awesome with async -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'" />
+</head>
+<body class="preload">
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- 3D Particle Background -->
+    <canvas id="particleCanvas" class="particle-canvas"></canvas>
+
+    <!-- Animated Gradient Mesh -->
+    <div class="gradient-mesh"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <i class="fas fa-car"></i>
+                <span>AutoTrader Global</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#calculator" class="nav-link">Calculator</a>
+                <a href="features.html" class="nav-link">Features</a>
+                <a href="showroom.html" class="nav-link">Showroom</a>
+                <a href="how-it-works.html" class="nav-link">How It Works</a>
+            </div>
+            <div class="nav-actions">
+                <button id="themeToggle" class="theme-toggle" title="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="btn-outline" onclick="window.location.href='results.html'">
+                    <i class="fas fa-history"></i> History
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Ultra Hero Section -->
+    <section class="ultra-hero" id="home">
+        <!-- 3D Perspective Background -->
+        <div class="hero-3d-space">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+            <div class="floating-shape shape-4"></div>
+            <div class="floating-shape shape-5"></div>
+            <div class="floating-shape shape-6"></div>
+        </div>
+        
+        <!-- 3D Floating Particles -->
+        <canvas id="heroParticles"></canvas>
+        
+        <!-- Depth Lines -->
+        <div class="depth-lines">
+            <div class="depth-line"></div>
+            <div class="depth-line"></div>
+            <div class="depth-line"></div>
+            <div class="depth-line"></div>
+            <div class="depth-line"></div>
+        </div>
+        
+        <!-- Mouse Parallax Layer -->
+        <div class="parallax-layer" id="parallaxLayer"></div>
+        
+        <!-- Animated Grid -->
+        <div class="hero-grid-bg">
+            <div class="grid-line-h"></div>
+            <div class="grid-line-h"></div>
+            <div class="grid-line-h"></div>
+            <div class="grid-line-v"></div>
+            <div class="grid-line-v"></div>
+            <div class="grid-line-v"></div>
+        </div>
+        
+        <!-- Spotlight Effect -->
+        <div class="hero-spotlight"></div>
+        
+        <div class="hero-content">
+            <!-- Enhanced Badge with Animation -->
+            <div class="hero-badge">
+                <div class="badge-icon">
+                    <i class="fas fa-rocket"></i>
+                    <div class="icon-rings">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <span>🚀 Powered by AI</span>
+                <div class="badge-pulse"></div>
+                <div class="badge-particles">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- Main Heading with 3D Effect -->
+            <h1 class="hero-title">
+                <span class="title-line" data-aos="fade-right">Find the Best Car to</span>
+                <span class="title-line highlight" data-aos="fade-left">
+                    <span class="glitch" data-text="Buy, Fix & Resell">Buy, Fix & Resell</span>
+                </span>
+                <span class="title-line" data-aos="fade-right">in Your Country</span>
+            </h1>
+            
+            <!-- Animated Stats Banner -->
+            <div class="hero-stats-banner">
+                <div class="stat-banner-item">
+                    <span class="stat-icon">🎯</span>
+                    <strong>98% Accuracy</strong>
+                </div>
+                <div class="stat-banner-item">
+                    <span class="stat-icon">⚡</span>
+                    <strong>Real-Time Data</strong>
+                </div>
+                <div class="stat-banner-item">
+                    <span class="stat-icon">💰</span>
+                    <strong>$2.4M+ Profits</strong>
+                </div>
+                <div class="stat-banner-item">
+                    <span class="stat-icon">🏆</span>
+                    <strong>10K+ Users</strong>
+                </div>
+            </div>
+            
+            <!-- Feature Tags -->
+            <div class="hero-features">
+                <span class="feature-tag" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fas fa-brain"></i>
+                    AI-Powered Analysis
+                    <div class="tag-glow"></div>
+                </span>
+                <span class="feature-tag" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fas fa-chart-line"></i>
+                    Real-Time Data
+                    <div class="tag-glow"></div>
+                </span>
+                <span class="feature-tag" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fas fa-shield-check"></i>
+                    Risk Assessment
+                    <div class="tag-glow"></div>
+                </span>
+                <span class="feature-tag" data-aos="zoom-in" data-aos-delay="400">
+                    <i class="fas fa-globe-americas"></i>
+                    Global Markets
+                    <div class="tag-glow"></div>
+                </span>
+            </div>
+            
+            <p class="hero-subtitle">
+                <span class="subtitle-icon">
+                    <i class="fas fa-chart-line"></i>
+                </span>
+                We analyze <strong>local repair costs, resale value, market demand, and profit</strong> to predict the smartest purchase with <strong>98% accuracy</strong>.
+            </p>
+
+            <!-- Enhanced Live Market Stats with Real-time Indicators -->
+            <div class="ultra-live-stats">
+                <div class="ultra-stat" data-tilt>
+                    <div class="stat-pulse-indicator"></div>
+                    <div class="stat-icon-bg">
+                        <i class="fas fa-car-side"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-number" id="liveCarCount">120,453</span>
+                        <span class="stat-text">Cars Tracked</span>
+                        <span class="stat-trend up">
+                            <i class="fas fa-arrow-up"></i> +234
+                        </span>
+                    </div>
+                    <div class="stat-graph">
+                        <span style="height: 40%"></span>
+                        <span style="height: 55%"></span>
+                        <span style="height: 65%"></span>
+                        <span style="height: 80%"></span>
+                        <span style="height: 100%"></span>
+                    </div>
+                </div>
+                <div class="ultra-stat" data-tilt>
+                    <div class="stat-pulse-indicator"></div>
+                    <div class="stat-icon-bg">
+                        <i class="fas fa-users"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-number" id="liveUsers">8,234</span>
+                        <span class="stat-text">Active Users</span>
+                        <span class="stat-trend up">
+                            <i class="fas fa-arrow-up"></i> +12
+                        </span>
+                    </div>
+                    <div class="stat-graph">
+                        <span style="height: 50%"></span>
+                        <span style="height: 60%"></span>
+                        <span style="height: 70%"></span>
+                        <span style="height: 90%"></span>
+                        <span style="height: 85%"></span>
+                    </div>
+                </div>
+                <div class="ultra-stat" data-tilt>
+                    <div class="stat-pulse-indicator"></div>
+                    <div class="stat-icon-bg">
+                        <i class="fas fa-dollar-sign"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-number" id="avgProfit">$1,420</span>
+                        <span class="stat-text">Avg Profit</span>
+                        <span class="stat-trend stable">
+                            <i class="fas fa-minus"></i> 0%
+                        </span>
+                    </div>
+                    <div class="stat-graph">
+                        <span style="height: 60%"></span>
+                        <span style="height: 60%"></span>
+                        <span style="height: 65%"></span>
+                        <span style="height: 60%"></span>
+                        <span style="height: 62%"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trust Indicators -->
+            <div class="hero-trust-bar">
+                <div class="trust-item">
+                    <i class="fas fa-lock"></i>
+                    <span>Secure & Private</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-bolt"></i>
+                    <span>Instant Results</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-star"></i>
+                    <span>4.9/5 Rating</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-check-double"></i>
+                    <span>Verified Data</span>
+                </div>
+            </div>
+
+            <!-- Ultra Form Card -->
+            <div class="ultra-form-card">
+                <div class="form-glow"></div>
+                
+                <div class="form-section">
+                    <label><i class="fas fa-flag"></i> Country</label>
+                    <div class="custom-select">
+                        <select id="country">
+                            <option value="usa">🇺🇸 United States</option>
+                            <option value="uk">🇬🇧 United Kingdom</option>
+                            <option value="turkey">🇹🇷 Turkey</option>
+                            <option value="uae">🇦🇪 UAE</option>
+                            <option value="lebanon">🇱🇧 Lebanon</option>
+                            <option value="canada">🇨🇦 Canada</option>
+                            <option value="germany">🇩🇪 Germany</option>
+                            <option value="france">🇫🇷 France</option>
+                        </select>
+                        <i class="fas fa-chevron-down select-arrow"></i>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <label><i class="fas fa-wallet"></i> Budget</label>
+                    <div class="ultra-input-group">
+                        <span class="ultra-prefix" id="currencySymbol">$</span>
+                        <input type="number" id="budget" placeholder="Enter your budget" min="0" step="100">
+                    </div>
+                    <div class="ultra-slider">
+                        <input type="range" id="budgetSlider" min="1000" max="100000" step="500" value="15000">
+                        <div class="slider-track"></div>
+                        <span class="slider-value" id="budgetDisplay">$15,000</span>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <label><i class="fas fa-tools"></i> Repair Tolerance</label>
+                    <div class="ultra-repair-grid">
+                        <button class="repair-option active" data-level="light">
+                            <div class="option-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="option-title">Light</span>
+                            <span class="option-desc">Minor fixes</span>
+                            <div class="option-check">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </button>
+                        <button class="repair-option" data-level="medium">
+                            <div class="option-icon">
+                                <i class="fas fa-wrench"></i>
+                            </div>
+                            <span class="option-title">Medium</span>
+                            <span class="option-desc">Standard repairs</span>
+                            <div class="option-check">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </button>
+                        <button class="repair-option" data-level="heavy">
+                            <div class="option-icon">
+                                <i class="fas fa-hammer"></i>
+                            </div>
+                            <span class="option-title">Heavy</span>
+                            <span class="option-desc">Major work</span>
+                            <div class="option-check">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <label><i class="fas fa-car"></i> Car Type</label>
+                    <div class="custom-select">
+                        <select id="carType">
+                            <option value="any">🚗 Any</option>
+                            <option value="sedan">🚙 Sedan</option>
+                            <option value="hatchback">🚗 Hatchback</option>
+                            <option value="suv">🚙 SUV</option>
+                            <option value="truck">🚚 Truck</option>
+                            <option value="coupe">🏎️ Coupe</option>
+                            <option value="van">🚐 Van</option>
+                        </select>
+                        <i class="fas fa-chevron-down select-arrow"></i>
+                    </div>
+                </div>
+
+                <!-- Advanced Filters Toggle -->
+                <div class="advanced-toggle">
+                    <button type="button" id="toggleAdvanced" class="ultra-toggle-btn">
+                        <span class="toggle-text">
+                            <i class="fas fa-sliders-h"></i>
+                            Advanced Filters
+                        </span>
+                        <i class="fas fa-chevron-down toggle-chevron"></i>
+                    </button>
+                </div>
+
+                <div id="advancedFilters" class="ultra-advanced-filters">
+                    <div class="advanced-grid">
+                        <div class="form-section">
+                            <label><i class="fas fa-calendar"></i> Max Age (Years)</label>
+                            <input type="number" id="maxAge" placeholder="e.g., 10" min="1" max="50">
+                        </div>
+
+                        <div class="form-section">
+                            <label><i class="fas fa-tachometer-alt"></i> Max Mileage</label>
+                            <input type="number" id="maxMileage" placeholder="e.g., 100000" min="0" step="1000">
+                        </div>
+
+                        <div class="form-section">
+                            <label><i class="fas fa-fire"></i> Fuel Type</label>
+                            <div class="custom-select">
+                                <select id="fuelType">
+                                    <option value="any">Any</option>
+                                    <option value="gasoline">⛽ Gasoline</option>
+                                    <option value="diesel">🛢️ Diesel</option>
+                                    <option value="electric">🔋 Electric</option>
+                                    <option value="hybrid">♻️ Hybrid</option>
+                                </select>
+                                <i class="fas fa-chevron-down select-arrow"></i>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <label><i class="fas fa-cog"></i> Transmission</label>
+                            <div class="custom-select">
+                                <select id="transmission">
+                                    <option value="any">Any</option>
+                                    <option value="automatic">Automatic</option>
+                                    <option value="manual">Manual</option>
+                                </select>
+                                <i class="fas fa-chevron-down select-arrow"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <label><i class="fas fa-bullseye"></i> Goal</label>
+                    <div class="custom-select">
+                        <select id="goal">
+                            <option value="balanced">⚖️ Balanced</option>
+                            <option value="fast">⚡ Fast Sale</option>
+                            <option value="profit">💰 Maximum Profit</option>
+                            <option value="lowrisk">🛡️ Low Risk</option>
+                        </select>
+                        <i class="fas fa-chevron-down select-arrow"></i>
+                    </div>
+                </div>
+
+                <button id="findCars" class="ultra-find-btn">
+                    <span class="btn-content">
+                        <i class="fas fa-search"></i>
+                        FIND BEST CARS
+                    </span>
+                    <div class="btn-glow"></div>
+                    <div class="btn-particles">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+
+                <div class="form-footer-ultra">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Your searches are saved locally</span>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Ultra Profit Calculator Section -->
+    <section class="ultra-calculator" id="calculator">
+        <div class="calc-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        
+        <div class="container">
+            <div class="ultra-calc-header">
+                <span class="calc-badge">
+                    <i class="fas fa-calculator"></i>
+                    Smart Calculator
+                </span>
+                <h2>Profit Calculator</h2>
+                <p>Calculate your potential returns with precision</p>
+            </div>
+
+            <div class="ultra-calc-grid">
+                <!-- Left: Input Panel -->
+                <div class="calc-input-panel">
+                    <div class="panel-header">
+                        <i class="fas fa-sliders-h"></i>
+                        <span>Deal Parameters</span>
+                    </div>
+                    
+                    <div class="input-group">
+                        <div class="ultra-input">
+                            <label>
+                                <i class="fas fa-tag"></i>
+                                Purchase Price
+                            </label>
+                            <div class="input-wrapper">
+                                <span class="input-prefix">$</span>
+                                <input type="number" id="calcPurchase" placeholder="10000" value="10000">
+                            </div>
+                        </div>
+
+                        <div class="ultra-input">
+                            <label>
+                                <i class="fas fa-wrench"></i>
+                                Repair Cost
+                            </label>
+                            <div class="input-wrapper">
+                                <span class="input-prefix">$</span>
+                                <input type="number" id="calcRepair" placeholder="2000" value="2000">
+                            </div>
+                        </div>
+
+                        <div class="ultra-input">
+                            <label>
+                                <i class="fas fa-dollar-sign"></i>
+                                Expected Sale Price
+                            </label>
+                            <div class="input-wrapper">
+                                <span class="input-prefix">$</span>
+                                <input type="number" id="calcSale" placeholder="15000" value="15000">
+                            </div>
+                        </div>
+
+                        <div class="ultra-input">
+                            <label>
+                                <i class="fas fa-receipt"></i>
+                                Other Costs
+                            </label>
+                            <div class="input-wrapper">
+                                <span class="input-prefix">$</span>
+                                <input type="number" id="calcOther" placeholder="500" value="500">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="reset-calc-btn">
+                        <i class="fas fa-redo"></i>
+                        Reset Values
+                    </button>
+                </div>
+
+                <!-- Right: Results Panel -->
+                <div class="calc-results-panel">
+                    <div class="profit-hero">
+                        <div class="profit-ring">
+                            <svg class="ring-svg" viewBox="0 0 200 200">
+                                <defs>
+                                    <linearGradient id="profitGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#00AEEF;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#00ff9d;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <circle class="ring-bg" cx="100" cy="100" r="85"></circle>
+                                <circle class="ring-progress" cx="100" cy="100" r="85" id="roiRing"></circle>
+                            </svg>
+                            <div class="ring-content">
+                                <span class="ring-label">Net Profit</span>
+                                <span class="ring-value" id="profitAmount">$2,500</span>
+                                <span class="ring-roi" id="profitMargin">20% ROI</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="breakdown-cards">
+                        <div class="breakdown-card investment">
+                            <div class="card-icon">
+                                <i class="fas fa-coins"></i>
+                            </div>
+                            <div class="card-content">
+                                <span class="card-label">Total Investment</span>
+                                <span class="card-value" id="totalInvestment">$12,500</span>
+                            </div>
+                        </div>
+
+                        <div class="breakdown-card return">
+                            <div class="card-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="card-content">
+                                <span class="card-label">Expected Return</span>
+                                <span class="card-value" id="expectedReturn">$15,000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cost-breakdown-visual">
+                        <div class="visual-header">
+                            <i class="fas fa-chart-pie"></i>
+                            Cost Breakdown
+                        </div>
+                        <div class="visual-bars">
+                            <div class="cost-bar">
+                                <div class="bar-info">
+                                    <span class="bar-label">Purchase</span>
+                                    <span class="bar-value" id="purchasePercent">80%</span>
+                                </div>
+                                <div class="bar-track">
+                                    <div class="bar-fill purchase-bar" id="purchaseBar" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="cost-bar">
+                                <div class="bar-info">
+                                    <span class="bar-label">Repairs</span>
+                                    <span class="bar-value" id="repairPercent">16%</span>
+                                </div>
+                                <div class="bar-track">
+                                    <div class="bar-fill repair-bar" id="repairBar" style="width: 16%"></div>
+                                </div>
+                            </div>
+                            <div class="cost-bar">
+                                <div class="bar-info">
+                                    <span class="bar-label">Other Costs</span>
+                                    <span class="bar-value" id="otherPercent">4%</span>
+                                </div>
+                                <div class="bar-track">
+                                    <div class="bar-fill other-bar" id="otherBar" style="width: 4%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Ultra Modern Stats Section -->
+<section class="ultra-stats" id="stats">
+    <!-- Floating Particles Background -->
+    <div class="stats-particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <div class="stats-header">
+        <span class="stats-badge">
+            <i class="fas fa-chart-line"></i>
+            Real-Time Analytics
+        </span>
+        <h2 class="stats-title">
+            Powered by <span class="gradient-text">Data Intelligence</span>
+        </h2>
+        <p class="stats-subtitle">Trusted by thousands of successful car flippers worldwide</p>
+    </div>
+
+    <div class="ultra-stats-grid">
+        <!-- Stat Card 1 -->
+        <div class="ultra-stat-card" data-tilt>
+            <div class="stat-card-glow"></div>
+            <div class="stat-icon-wrapper">
+                <i class="fas fa-car-side"></i>
+                <div class="icon-ring"></div>
+            </div>
+            <div class="stat-content">
+                <h3 class="stat-number" data-count="120000">0</h3>
+                <p class="stat-label">Cars Analyzed</p>
+                <div class="stat-trend">
+                    <i class="fas fa-arrow-up"></i>
+                    <span>+12% this month</span>
+                </div>
+            </div>
+            <div class="stat-progress">
+                <div class="progress-bar" style="width: 92%"></div>
+            </div>
+        </div>
+
+        <!-- Stat Card 2 -->
+        <div class="ultra-stat-card" data-tilt>
+            <div class="stat-card-glow"></div>
+            <div class="stat-icon-wrapper">
+                <i class="fas fa-tools"></i>
+                <div class="icon-ring"></div>
+            </div>
+            <div class="stat-content">
+                <h3 class="stat-number" data-count="85000">0</h3>
+                <p class="stat-label">Repair Estimates</p>
+                <div class="stat-trend">
+                    <i class="fas fa-arrow-up"></i>
+                    <span>+8% this month</span>
+                </div>
+            </div>
+            <div class="stat-progress">
+                <div class="progress-bar" style="width: 85%"></div>
+            </div>
+        </div>
+
+        <!-- Stat Card 3 -->
+        <div class="ultra-stat-card" data-tilt>
+            <div class="stat-card-glow"></div>
+            <div class="stat-icon-wrapper">
+                <i class="fas fa-globe-americas"></i>
+                <div class="icon-ring"></div>
+            </div>
+            <div class="stat-content">
+                <h3 class="stat-number" data-count="8">0</h3>
+                <p class="stat-label">Countries Supported</p>
+                <div class="stat-trend">
+                    <i class="fas fa-arrow-up"></i>
+                    <span>Growing globally</span>
+                </div>
+            </div>
+            <div class="stat-progress">
+                <div class="progress-bar" style="width: 100%"></div>
+            </div>
+        </div>
+
+        <!-- Stat Card 4 -->
+        <div class="ultra-stat-card" data-tilt>
+            <div class="stat-card-glow"></div>
+            <div class="stat-icon-wrapper">
+                <i class="fas fa-dollar-sign"></i>
+                <div class="icon-ring"></div>
+            </div>
+            <div class="stat-content">
+                <h3 class="stat-number" data-prefix="$" data-count="1420">$0</h3>
+                <p class="stat-label">Avg Flip Profit</p>
+                <div class="stat-trend">
+                    <i class="fas fa-arrow-up"></i>
+                    <span>+15% this quarter</span>
+                </div>
+            </div>
+            <div class="stat-progress">
+                <div class="progress-bar" style="width: 78%"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Stats Bar -->
+    <div class="stats-bottom-bar">
+        <div class="bottom-stat">
+            <i class="fas fa-users"></i>
+            <div>
+                <strong>10,000+</strong>
+                <span>Active Users</span>
+            </div>
+        </div>
+        <div class="bottom-stat">
+            <i class="fas fa-chart-bar"></i>
+            <div>
+                <strong>94%</strong>
+                <span>Success Rate</span>
+            </div>
+        </div>
+        <div class="bottom-stat">
+            <i class="fas fa-trophy"></i>
+            <div>
+                <strong>#1</strong>
+                <span>Car Flip Platform</span>
+            </div>
+        </div>
+        <div class="bottom-stat">
+            <i class="fas fa-clock"></i>
+            <div>
+                <strong>24/7</strong>
+                <span>Live Support</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Popular Cars Section -->
+<section class="popular-cars-section">
+    <canvas id="popularCarsCanvas"></canvas>
+    <div class="section-container">
+        <div class="section-header-modern">
+            <div class="section-tag">
+                <i class="fas fa-fire"></i>
+                <span>Trending Now</span>
+            </div>
+            <h2 class="section-title-modern">Popular Cars in Your Country</h2>
+            <p class="section-subtitle">Most searched and valued vehicles this month</p>
+        </div>
+
+        <div class="popular-cars-grid">
+            <div class="popular-car-card" data-popularity="95">
+                <div class="car-card-badge">
+                    <i class="fas fa-crown"></i>
+                    <span>#1</span>
+                </div>
+                <div class="car-image-wrapper">
+                    <div class="car-placeholder">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="popularity-ring">
+                        <svg viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" class="ring-bg"></circle>
+                            <circle cx="50" cy="50" r="45" class="ring-progress" style="--progress: 95"></circle>
+                        </svg>
+                        <span class="popularity-score">95%</span>
+                    </div>
+                </div>
+                <div class="car-card-content">
+                    <h3 class="car-name">Toyota Camry</h3>
+                    <div class="car-stats">
+                        <div class="car-stat-item">
+                            <i class="fas fa-search"></i>
+                            <span>15.2K searches</span>
+                        </div>
+                        <div class="car-stat-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>+12% this week</span>
+                        </div>
+                    </div>
+                    <div class="car-price-trend">
+                        <span class="price-label">Avg. Market Value</span>
+                        <span class="price-value">$28,500</span>
+                        <div class="trend-indicator up">
+                            <i class="fas fa-arrow-up"></i>
+                            <span>2.3%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popular-car-card" data-popularity="88">
+                <div class="car-card-badge">
+                    <span>#2</span>
+                </div>
+                <div class="car-image-wrapper">
+                    <div class="car-placeholder">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="popularity-ring">
+                        <svg viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" class="ring-bg"></circle>
+                            <circle cx="50" cy="50" r="45" class="ring-progress" style="--progress: 88"></circle>
+                        </svg>
+                        <span class="popularity-score">88%</span>
+                    </div>
+                </div>
+                <div class="car-card-content">
+                    <h3 class="car-name">Honda Civic</h3>
+                    <div class="car-stats">
+                        <div class="car-stat-item">
+                            <i class="fas fa-search"></i>
+                            <span>12.8K searches</span>
+                        </div>
+                        <div class="car-stat-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>+8% this week</span>
+                        </div>
+                    </div>
+                    <div class="car-price-trend">
+                        <span class="price-label">Avg. Market Value</span>
+                        <span class="price-value">$24,200</span>
+                        <div class="trend-indicator up">
+                            <i class="fas fa-arrow-up"></i>
+                            <span>1.8%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popular-car-card" data-popularity="82">
+                <div class="car-card-badge">
+                    <span>#3</span>
+                </div>
+                <div class="car-image-wrapper">
+                    <div class="car-placeholder">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="popularity-ring">
+                        <svg viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" class="ring-bg"></circle>
+                            <circle cx="50" cy="50" r="45" class="ring-progress" style="--progress: 82"></circle>
+                        </svg>
+                        <span class="popularity-score">82%</span>
+                    </div>
+                </div>
+                <div class="car-card-content">
+                    <h3 class="car-name">BMW 3 Series</h3>
+                    <div class="car-stats">
+                        <div class="car-stat-item">
+                            <i class="fas fa-search"></i>
+                            <span>10.5K searches</span>
+                        </div>
+                        <div class="car-stat-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>+15% this week</span>
+                        </div>
+                    </div>
+                    <div class="car-price-trend">
+                        <span class="price-label">Avg. Market Value</span>
+                        <span class="price-value">$42,800</span>
+                        <div class="trend-indicator up">
+                            <i class="fas fa-arrow-up"></i>
+                            <span>3.1%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popular-car-card" data-popularity="76">
+                <div class="car-card-badge">
+                    <span>#4</span>
+                </div>
+                <div class="car-image-wrapper">
+                    <div class="car-placeholder">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="popularity-ring">
+                        <svg viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" class="ring-bg"></circle>
+                            <circle cx="50" cy="50" r="45" class="ring-progress" style="--progress: 76"></circle>
+                        </svg>
+                        <span class="popularity-score">76%</span>
+                    </div>
+                </div>
+                <div class="car-card-content">
+                    <h3 class="car-name">Tesla Model 3</h3>
+                    <div class="car-stats">
+                        <div class="car-stat-item">
+                            <i class="fas fa-search"></i>
+                            <span>9.2K searches</span>
+                        </div>
+                        <div class="car-stat-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>+22% this week</span>
+                        </div>
+                    </div>
+                    <div class="car-price-trend">
+                        <span class="price-label">Avg. Market Value</span>
+                        <span class="price-value">$38,990</span>
+                        <div class="trend-indicator down">
+                            <i class="fas fa-arrow-down"></i>
+                            <span>1.2%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Market Insights Section -->
+<section class="market-insights-section">
+    <div class="insights-particles"></div>
+    <div class="section-container">
+        <div class="section-header-modern">
+            <div class="section-tag">
+                <i class="fas fa-chart-line"></i>
+                <span>Live Data</span>
+            </div>
+            <h2 class="section-title-modern">Trending Market Insights</h2>
+            <p class="section-subtitle">Real-time automotive market analytics</p>
+        </div>
+
+        <div class="insights-grid">
+            <div class="insight-card highlight">
+                <div class="insight-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <div class="insight-content">
+                    <h3>Electric Vehicle Surge</h3>
+                    <p>EV searches increased by 45% this quarter</p>
+                    <div class="insight-chart">
+                        <div class="chart-bar" style="--height: 60%"></div>
+                        <div class="chart-bar" style="--height: 75%"></div>
+                        <div class="chart-bar" style="--height: 85%"></div>
+                        <div class="chart-bar" style="--height: 100%"></div>
+                    </div>
+                    <div class="insight-meta">
+                        <span class="meta-badge success">
+                            <i class="fas fa-arrow-up"></i>
+                            +45%
+                        </span>
+                        <span class="meta-time">Last 90 days</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="insight-card">
+                <div class="insight-icon">
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+                <div class="insight-content">
+                    <h3>SUV Market Growth</h3>
+                    <p>SUV prices stabilizing after 18% increase</p>
+                    <div class="insight-chart">
+                        <div class="chart-bar" style="--height: 70%"></div>
+                        <div class="chart-bar" style="--height: 90%"></div>
+                        <div class="chart-bar" style="--height: 95%"></div>
+                        <div class="chart-bar" style="--height: 92%"></div>
+                    </div>
+                    <div class="insight-meta">
+                        <span class="meta-badge warning">
+                            <i class="fas fa-minus"></i>
+                            Stable
+                        </span>
+                        <span class="meta-time">Last 30 days</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="insight-card">
+                <div class="insight-icon">
+                    <i class="fas fa-fire"></i>
+                </div>
+                <div class="insight-content">
+                    <h3>Luxury Segment Hot</h3>
+                    <p>Premium brands seeing record demand</p>
+                    <div class="insight-chart">
+                        <div class="chart-bar" style="--height: 65%"></div>
+                        <div class="chart-bar" style="--height: 78%"></div>
+                        <div class="chart-bar" style="--height: 88%"></div>
+                        <div class="chart-bar" style="--height: 96%"></div>
+                    </div>
+                    <div class="insight-meta">
+                        <span class="meta-badge success">
+                            <i class="fas fa-arrow-up"></i>
+                            +28%
+                        </span>
+                        <span class="meta-time">Last 60 days</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="insight-card">
+                <div class="insight-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <div class="insight-content">
+                    <h3>Inventory Turnover</h3>
+                    <p>Cars selling 40% faster than last year</p>
+                    <div class="insight-chart">
+                        <div class="chart-bar" style="--height: 50%"></div>
+                        <div class="chart-bar" style="--height: 65%"></div>
+                        <div class="chart-bar" style="--height: 80%"></div>
+                        <div class="chart-bar" style="--height: 90%"></div>
+                    </div>
+                    <div class="insight-meta">
+                        <span class="meta-badge success">
+                            <i class="fas fa-arrow-up"></i>
+                            +40%
+                        </span>
+                        <span class="meta-time">YoY Comparison</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials-section">
+    <canvas id="testimonialsCanvas"></canvas>
+    <div class="section-container">
+        <div class="section-header-modern">
+            <div class="section-tag">
+                <i class="fas fa-star"></i>
+                <span>User Reviews</span>
+            </div>
+            <h2 class="section-title-modern">What Our Users Say</h2>
+            <p class="section-subtitle">Real experiences from car buyers and sellers</p>
+        </div>
+
+        <div class="testimonials-grid">
+            <div class="testimonial-card" data-rating="5">
+                <div class="testimonial-header">
+                    <div class="user-avatar">
+                        <i class="fas fa-user"></i>
+                        <div class="avatar-ring"></div>
+                    </div>
+                    <div class="user-info">
+                        <h4 class="user-name">Sarah Johnson</h4>
+                        <p class="user-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Los Angeles, CA
+                        </p>
+                    </div>
+                    <div class="rating-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonial-content">
+                    <p>"Sold my car in just 3 days! The AI valuation was spot-on and the process was incredibly smooth. Best platform I've ever used."</p>
+                </div>
+                <div class="testimonial-footer">
+                    <span class="verified-badge">
+                        <i class="fas fa-check-circle"></i>
+                        Verified Purchase
+                    </span>
+                    <span class="testimonial-date">2 days ago</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card" data-rating="5">
+                <div class="testimonial-header">
+                    <div class="user-avatar">
+                        <i class="fas fa-user"></i>
+                        <div class="avatar-ring"></div>
+                    </div>
+                    <div class="user-info">
+                        <h4 class="user-name">Michael Chen</h4>
+                        <p class="user-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            New York, NY
+                        </p>
+                    </div>
+                    <div class="rating-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonial-content">
+                    <p>"The market insights helped me find the perfect timing to buy. Saved over $3,000 compared to dealership prices!"</p>
+                </div>
+                <div class="testimonial-footer">
+                    <span class="verified-badge">
+                        <i class="fas fa-check-circle"></i>
+                        Verified Purchase
+                    </span>
+                    <span class="testimonial-date">5 days ago</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card" data-rating="5">
+                <div class="testimonial-header">
+                    <div class="user-avatar">
+                        <i class="fas fa-user"></i>
+                        <div class="avatar-ring"></div>
+                    </div>
+                    <div class="user-info">
+                        <h4 class="user-name">Emily Rodriguez</h4>
+                        <p class="user-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Miami, FL
+                        </p>
+                    </div>
+                    <div class="rating-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonial-content">
+                    <p>"Amazing platform! The advanced filters made searching so easy. Found my dream car within my budget in minutes."</p>
+                </div>
+                <div class="testimonial-footer">
+                    <span class="verified-badge">
+                        <i class="fas fa-check-circle"></i>
+                        Verified Purchase
+                    </span>
+                    <span class="testimonial-date">1 week ago</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonials-stats">
+            <div class="stat-item">
+                <div class="stat-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="stat-content">
+                    <span class="stat-value">50K+</span>
+                    <span class="stat-label">Happy Users</span>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="stat-content">
+                    <span class="stat-value">4.9/5</span>
+                    <span class="stat-label">Average Rating</span>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <div class="stat-content">
+                    <span class="stat-value">98%</span>
+                    <span class="stat-label">Satisfaction Rate</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq-section">
+    <div class="faq-background">
+        <div class="faq-orb faq-orb-1"></div>
+        <div class="faq-orb faq-orb-2"></div>
+    </div>
+    <div class="section-container">
+        <div class="section-header-modern">
+            <div class="section-tag">
+                <i class="fas fa-question-circle"></i>
+                <span>Help Center</span>
+            </div>
+            <h2 class="section-title-modern">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Everything you need to know about AutoTrader</p>
+        </div>
+
+        <div class="faq-grid">
+            <div class="faq-column">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="faq-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <h3>How accurate is the AI valuation?</h3>
+                        <button class="faq-toggle">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our AI analyzes over 10 million data points including current market trends, vehicle condition, location, and historical sales data. The accuracy rate is 95%+ with valuations typically within $500 of actual sale prices.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="faq-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Is my personal data secure?</h3>
+                        <button class="faq-toggle">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely. We use 256-bit SSL encryption, are GDPR compliant, and never share your data with third parties without explicit consent. All transactions are secured with bank-level encryption.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="faq-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>How quickly can I sell my car?</h3>
+                        <button class="faq-toggle">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>On average, cars listed on AutoTrader sell 40% faster than traditional methods. Most listings receive offers within 24-48 hours, with complete sales typically closing within 7 days.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="faq-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h3>Are there any hidden fees?</h3>
+                        <button class="faq-toggle">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No hidden fees, ever. Our pricing is transparent: free valuations, free listings for buyers, and sellers pay only a small commission upon successful sale. No upfront costs or subscription fees.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-column">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="faq-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Which countries are supported?</h3>
+                        <button class="faq-toggle">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We currently operate in 45+ countries across North America, Europe, Asia, and Australia. Our platform supports 30+ languages and handles local currency conversions automatically.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="faq-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Is there a mobile app?</h3>
+                        <button class="faq-toggle">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! Our mobile apps for iOS and Android offer the full desktop experience with additional features like instant notifications, AR vehicle preview, and one-tap messaging. Download from App Store or Google Play.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="faq-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>What kind of support do you offer?</h3>
+                        <button class="faq-toggle">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>24/7 customer support via live chat, email, and phone. Our expert team typically responds within 5 minutes during business hours. We also offer video consultations for premium users.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="faq-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>Do you verify vehicle history?</h3>
+                        <button class="faq-toggle">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, every listing includes a comprehensive vehicle history report covering accidents, ownership, service records, and title status. We partner with leading verification services to ensure accuracy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-cta">
+            <p>Still have questions?</p>
+            <button class="btn-modern">
+                <span>Contact Support</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Live Market Price Tracker -->
+<section class="price-tracker-section">
+    <div class="tracker-background"></div>
+    <div class="section-container">
+        <div class="section-header-modern">
+            <div class="section-tag">
+                <i class="fas fa-chart-line"></i>
+                <span>Live Data</span>
+            </div>
+            <h2 class="section-title-modern">Real-Time Market Tracker</h2>
+            <p class="section-subtitle">Live price movements and market trends updated every minute</p>
+        </div>
+
+        <div class="tracker-controls">
+            <button class="time-filter active" data-time="1h">1H</button>
+            <button class="time-filter" data-time="24h">24H</button>
+            <button class="time-filter" data-time="7d">7D</button>
+            <button class="time-filter" data-time="30d">30D</button>
+        </div>
+
+        <div class="price-cards-grid">
+            <div class="price-card">
+                <div class="price-card-header">
+                    <div class="car-icon-badge">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="car-info">
+                        <h3>Toyota Camry</h3>
+                        <p>Sedan • 2024</p>
+                    </div>
+                    <div class="price-change positive">
+                        <i class="fas fa-arrow-up"></i>
+                        <span>+2.3%</span>
+                    </div>
+                </div>
+                <div class="current-price">$28,500</div>
+                <canvas class="mini-chart" width="300" height="80" data-trend="up"></canvas>
+                <div class="price-stats">
+                    <div class="stat-mini">
+                        <span class="label">Low</span>
+                        <span class="value">$27,800</span>
+                    </div>
+                    <div class="stat-mini">
+                        <span class="label">High</span>
+                        <span class="value">$29,200</span>
+                    </div>
+                    <div class="stat-mini">
+                        <span class="label">Avg</span>
+                        <span class="value">$28,400</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="price-card">
+                <div class="price-card-header">
+                    <div class="car-icon-badge">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="car-info">
+                        <h3>BMW 3 Series</h3>
+                        <p>Sedan • 2024</p>
+                    </div>
+                    <div class="price-change positive">
+                        <i class="fas fa-arrow-up"></i>
+                        <span>+3.1%</span>
+                    </div>
+                </div>
+                <div class="current-price">$42,800</div>
+                <canvas class="mini-chart" width="300" height="80" data-trend="up"></canvas>
+                <div class="price-stats">
+                    <div class="stat-mini">
+                        <span class="label">Low</span>
+                        <span class="value">$41,200</span>
+                    </div>
+                    <div class="stat-mini">
+                        <span class="label">High</span>
+                        <span class="value">$43,900</span>
+                    </div>
+                    <div class="stat-mini">
+                        <span class="label">Avg</span>
+                        <span class="value">$42,500</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="price-card">
+                <div class="price-card-header">
+                    <div class="car-icon-badge">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="car-info">
+                        <h3>Tesla Model 3</h3>
+                        <p>Electric • 2024</p>
+                    </div>
+                    <div class="price-change negative">
+                        <i class="fas fa-arrow-down"></i>
+                        <span>-1.2%</span>
+                    </div>
+                </div>
+                <div class="current-price">$38,990</div>
+                <canvas class="mini-chart" width="300" height="80" data-trend="down"></canvas>
+                <div class="price-stats">
+                    <div class="stat-mini">
+                        <span class="label">Low</span>
+                        <span class="value">$38,500</span>
+                    </div>
+                    <div class="stat-mini">
+                        <span class="label">High</span>
+                        <span class="value">$39,800</span>
+                    </div>
+                    <div class="stat-mini">
+                        <span class="label">Avg</span>
+                        <span class="value">$39,100</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="price-card">
+                <div class="price-card-header">
+                    <div class="car-icon-badge">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="car-info">
+                        <h3>Honda Civic</h3>
+                        <p>Sedan • 2024</p>
+                    </div>
+                    <div class="price-change positive">
+                        <i class="fas fa-arrow-up"></i>
+                        <span>+1.8%</span>
+                    </div>
+                </div>
+                <div class="current-price">$24,200</div>
+                <canvas class="mini-chart" width="300" height="80" data-trend="up"></canvas>
+                <div class="price-stats">
+                    <div class="stat-mini">
+                        <span class="label">Low</span>
+                        <span class="value">$23,800</span>
+                    </div>
+                    <div class="stat-mini">
+                        <span class="label">High</span>
+                        <span class="value">$24,600</span>
+                    </div>
+                    <div class="stat-mini">
+                        <span class="label">Avg</span>
+                        <span class="value">$24,100</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Car Comparison Tool -->
+<section class="comparison-section">
+    <div class="section-container">
+        <div class="section-header-modern">
+            <div class="section-tag">
+                <i class="fas fa-balance-scale"></i>
+                <span>Compare</span>
+            </div>
+            <h2 class="section-title-modern">Vehicle Comparison Tool</h2>
+            <p class="section-subtitle">Compare specifications side-by-side</p>
+        </div>
+
+        <div class="comparison-grid">
+            <div class="comparison-car">
+                <div class="comparison-header">
+                    <div class="car-image-comp">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Toyota Camry</h3>
+                    <p class="car-price">$28,500</p>
+                    <div class="match-score">
+                        <div class="score-ring" style="--score: 92"></div>
+                        <span class="score-text">92% Match</span>
+                    </div>
+                </div>
+                <div class="comparison-specs">
+                    <div class="spec-row">
+                        <span class="spec-label">Engine</span>
+                        <span class="spec-value">2.5L 4-Cyl</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Horsepower</span>
+                        <span class="spec-value winner">203 HP</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">MPG</span>
+                        <span class="spec-value winner">32 City / 41 Hwy</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">0-60 mph</span>
+                        <span class="spec-value">7.9s</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Seating</span>
+                        <span class="spec-value">5 Passengers</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Safety Rating</span>
+                        <span class="spec-value winner">5★ NHTSA</span>
+                    </div>
+                </div>
+                <button class="compare-btn">Select This Car</button>
+            </div>
+
+            <div class="comparison-car">
+                <div class="comparison-header">
+                    <div class="car-image-comp">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Honda Accord</h3>
+                    <p class="car-price">$27,900</p>
+                    <div class="match-score">
+                        <div class="score-ring" style="--score: 89"></div>
+                        <span class="score-text">89% Match</span>
+                    </div>
+                </div>
+                <div class="comparison-specs">
+                    <div class="spec-row">
+                        <span class="spec-label">Engine</span>
+                        <span class="spec-value">1.5L Turbo</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Horsepower</span>
+                        <span class="spec-value">192 HP</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">MPG</span>
+                        <span class="spec-value">30 City / 38 Hwy</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">0-60 mph</span>
+                        <span class="spec-value winner">7.3s</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Seating</span>
+                        <span class="spec-value">5 Passengers</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Safety Rating</span>
+                        <span class="spec-value winner">5★ NHTSA</span>
+                    </div>
+                </div>
+                <button class="compare-btn">Select This Car</button>
+            </div>
+
+            <div class="comparison-car">
+                <div class="comparison-header">
+                    <div class="car-image-comp">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Nissan Altima</h3>
+                    <p class="car-price">$26,300</p>
+                    <div class="match-score">
+                        <div class="score-ring" style="--score: 85"></div>
+                        <span class="score-text">85% Match</span>
+                    </div>
+                </div>
+                <div class="comparison-specs">
+                    <div class="spec-row">
+                        <span class="spec-label">Engine</span>
+                        <span class="spec-value">2.5L 4-Cyl</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Horsepower</span>
+                        <span class="spec-value">188 HP</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">MPG</span>
+                        <span class="spec-value">28 City / 39 Hwy</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">0-60 mph</span>
+                        <span class="spec-value">8.2s</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Seating</span>
+                        <span class="spec-value">5 Passengers</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Safety Rating</span>
+                        <span class="spec-value">4★ NHTSA</span>
+                    </div>
+                </div>
+                <button class="compare-btn winner">Best Value</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- AI Recommendations -->
+<section class="recommendations-section">
+    <canvas id="recommendationsCanvas"></canvas>
+    <div class="section-container">
+        <div class="section-header-modern">
+            <div class="section-tag">
+                <i class="fas fa-brain"></i>
+                <span>AI Powered</span>
+            </div>
+            <h2 class="section-title-modern">Recommended For You</h2>
+            <p class="section-subtitle">Smart suggestions based on your preferences</p>
+        </div>
+
+        <div class="recommendations-grid">
+            <div class="rec-card">
+                <div class="rec-badge">
+                    <i class="fas fa-star"></i>
+                    <span>Top Pick</span>
+                </div>
+                <div class="rec-image">
+                    <i class="fas fa-car"></i>
+                </div>
+                <div class="rec-content">
+                    <h3>Ford Mustang</h3>
+                    <p class="rec-category">Sports Car • 2024</p>
+                    <div class="rec-match">
+                        <div class="match-bar">
+                            <div class="match-fill" style="width: 96%"></div>
+                        </div>
+                        <span class="match-percentage">96% Match</span>
+                    </div>
+                    <div class="rec-reasons">
+                        <div class="reason-tag">
+                            <i class="fas fa-check"></i>
+                            <span>Budget Match</span>
+                        </div>
+                        <div class="reason-tag">
+                            <i class="fas fa-check"></i>
+                            <span>Performance</span>
+                        </div>
+                        <div class="reason-tag">
+                            <i class="fas fa-check"></i>
+                            <span>Popular Choice</span>
+                        </div>
+                    </div>
+                    <div class="rec-footer">
+                        <span class="rec-price">$32,900</span>
+                        <button class="rec-btn">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="rec-btn primary">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rec-card">
+                <div class="rec-image">
+                    <i class="fas fa-car"></i>
+                </div>
+                <div class="rec-content">
+                    <h3>Mazda CX-5</h3>
+                    <p class="rec-category">SUV • 2024</p>
+                    <div class="rec-match">
+                        <div class="match-bar">
+                            <div class="match-fill" style="width: 91%"></div>
+                        </div>
+                        <span class="match-percentage">91% Match</span>
+                    </div>
+                    <div class="rec-reasons">
+                        <div class="reason-tag">
+                            <i class="fas fa-check"></i>
+                            <span>Safety Features</span>
+                        </div>
+                        <div class="reason-tag">
+                            <i class="fas fa-check"></i>
+                            <span>Fuel Efficient</span>
+                        </div>
+                    </div>
+                    <div class="rec-footer">
+                        <span class="rec-price">$29,800</span>
+                        <button class="rec-btn">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="rec-btn primary">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rec-card">
+                <div class="rec-image">
+                    <i class="fas fa-car"></i>
+                </div>
+                <div class="rec-content">
+                    <h3>Hyundai Sonata</h3>
+                    <p class="rec-category">Sedan • 2024</p>
+                    <div class="rec-match">
+                        <div class="match-bar">
+                            <div class="match-fill" style="width: 88%"></div>
+                        </div>
+                        <span class="match-percentage">88% Match</span>
+                    </div>
+                    <div class="rec-reasons">
+                        <div class="reason-tag">
+                            <i class="fas fa-check"></i>
+                            <span>Warranty</span>
+                        </div>
+                        <div class="reason-tag">
+                            <i class="fas fa-check"></i>
+                            <span>Tech Features</span>
+                        </div>
+                    </div>
+                    <div class="rec-footer">
+                        <span class="rec-price">$26,500</span>
+                        <button class="rec-btn">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="rec-btn primary">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Regional Price Heatmap -->
+<section class="heatmap-section">
+    <div class="section-container">
+        <div class="section-header-modern">
+            <div class="section-tag">
+                <i class="fas fa-map-marked-alt"></i>
+                <span>Regional Data</span>
+            </div>
+            <h2 class="section-title-modern">Price Heatmap by Region</h2>
+            <p class="section-subtitle">Average car prices across different states</p>
+        </div>
+
+        <div class="heatmap-controls">
+            <select class="heatmap-select">
+                <option>All Vehicles</option>
+                <option>Sedans</option>
+                <option>SUVs</option>
+                <option>Trucks</option>
+                <option>Electric</option>
+            </select>
+        </div>
+
+        <div class="heatmap-container">
+            <div class="map-placeholder">
+                <i class="fas fa-map"></i>
+                <p>Interactive US Map</p>
+            </div>
+            <div class="region-cards">
+                <div class="region-card high">
+                    <div class="region-header">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>California</h4>
+                    </div>
+                    <div class="region-price">$35,200</div>
+                    <div class="region-change positive">+4.2% vs National Avg</div>
+                    <div class="region-bar" style="--fill: 85%"></div>
+                </div>
+
+                <div class="region-card medium">
+                    <div class="region-header">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Texas</h4>
+                    </div>
+                    <div class="region-price">$31,800</div>
+                    <div class="region-change neutral">-1.5% vs National Avg</div>
+                    <div class="region-bar" style="--fill: 65%"></div>
+                </div>
+
+                <div class="region-card low">
+                    <div class="region-header">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Florida</h4>
+                    </div>
+                    <div class="region-price">$29,500</div>
+                    <div class="region-change negative">-5.8% vs National Avg</div>
+                    <div class="region-bar" style="--fill: 50%"></div>
+                </div>
+
+                <div class="region-card high">
+                    <div class="region-header">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>New York</h4>
+                    </div>
+                    <div class="region-price">$36,900</div>
+                    <div class="region-change positive">+8.3% vs National Avg</div>
+                    <div class="region-bar" style="--fill: 92%"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="heatmap-legend">
+            <div class="legend-item">
+                <div class="legend-color low"></div>
+                <span>Below Average</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color medium"></div>
+                <span>Average</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color high"></div>
+                <span>Above Average</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Finance Calculator -->
+<section class="finance-calc-section">
+    <div class="section-container">
+        <div class="section-header-modern">
+            <div class="section-tag">
+                <i class="fas fa-calculator-alt"></i>
+                <span>Financing</span>
+            </div>
+            <h2 class="section-title-modern">Auto Loan Calculator</h2>
+            <p class="section-subtitle">Calculate your monthly payments instantly</p>
+        </div>
+
+        <div class="finance-calc-container">
+            <div class="calc-inputs">
+                <div class="input-group">
+                    <label>Vehicle Price</label>
+                    <div class="input-wrapper">
+                        <span class="input-prefix">$</span>
+                        <input type="number" id="vehiclePrice" value="30000" min="1000" max="200000">
+                    </div>
+                    <input type="range" id="vehiclePriceRange" min="1000" max="200000" value="30000" step="500">
+                </div>
+
+                <div class="input-group">
+                    <label>Down Payment</label>
+                    <div class="input-wrapper">
+                        <span class="input-prefix">$</span>
+                        <input type="number" id="downPayment" value="6000" min="0" max="50000">
+                    </div>
+                    <input type="range" id="downPaymentRange" min="0" max="50000" value="6000" step="500">
+                </div>
+
+                <div class="input-group">
+                    <label>Interest Rate (%)</label>
+                    <div class="input-wrapper">
+                        <input type="number" id="interestRate" value="4.5" min="0" max="20" step="0.1">
+                        <span class="input-suffix">%</span>
+                    </div>
+                    <input type="range" id="interestRateRange" min="0" max="20" value="4.5" step="0.1">
+                </div>
+
+                <div class="input-group">
+                    <label>Loan Term</label>
+                    <div class="term-options">
+                        <button class="term-btn active" data-months="36">36 months</button>
+                        <button class="term-btn" data-months="48">48 months</button>
+                        <button class="term-btn" data-months="60">60 months</button>
+                        <button class="term-btn" data-months="72">72 months</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="calc-results">
+                <div class="result-card main-result">
+                    <div class="result-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="result-content">
+                        <span class="result-label">Monthly Payment</span>
+                        <span class="result-value" id="monthlyPayment">$712</span>
+                    </div>
+                </div>
+
+                <div class="result-breakdown">
+                    <div class="breakdown-item">
+                        <span class="breakdown-label">Loan Amount</span>
+                        <span class="breakdown-value" id="loanAmount">$24,000</span>
+                    </div>
+                    <div class="breakdown-item">
+                        <span class="breakdown-label">Total Interest</span>
+                        <span class="breakdown-value" id="totalInterest">$1,632</span>
+                    </div>
+                    <div class="breakdown-item">
+                        <span class="breakdown-label">Total Amount</span>
+                        <span class="breakdown-value" id="totalAmount">$25,632</span>
+                    </div>
+                </div>
+
+                <div class="payment-chart">
+                    <canvas id="paymentChart" width="300" height="200"></canvas>
+                </div>
+
+                <button class="apply-financing-btn">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Apply for Financing</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Vehicle History Timeline -->
+<section class="history-timeline-section">
+    <div class="section-container">
+        <div class="section-header-modern">
+            <div class="section-tag">
+                <i class="fas fa-history"></i>
+                <span>Vehicle Report</span>
+            </div>
+            <h2 class="section-title-modern">Vehicle History Example</h2>
+            <p class="section-subtitle">Comprehensive timeline of vehicle records</p>
+        </div>
+
+        <div class="timeline-container">
+            <div class="timeline-line"></div>
+            
+            <div class="timeline-event">
+                <div class="event-icon success">
+                    <i class="fas fa-industry"></i>
+                </div>
+                <div class="event-content">
+                    <h4>Manufactured</h4>
+                    <p class="event-date">January 2024</p>
+                    <p>Vehicle manufactured in Toyota Plant, Kentucky</p>
+                    <div class="event-details">
+                        <span class="detail-badge"><i class="fas fa-check"></i> Quality Certified</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-event">
+                <div class="event-icon success">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="event-content">
+                    <h4>First Owner</h4>
+                    <p class="event-date">February 2024</p>
+                    <p>Purchased by original owner in California</p>
+                    <div class="event-details">
+                        <span class="detail-badge"><i class="fas fa-file-contract"></i> Clean Title</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-event">
+                <div class="event-icon success">
+                    <i class="fas fa-wrench"></i>
+                </div>
+                <div class="event-content">
+                    <h4>First Service</h4>
+                    <p class="event-date">May 2024</p>
+                    <p>5,000 mile service at authorized Toyota dealer</p>
+                    <div class="event-details">
+                        <span class="detail-badge"><i class="fas fa-oil-can"></i> Oil Changed</span>
+                        <span class="detail-badge"><i class="fas fa-tire"></i> Tires Rotated</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-event">
+                <div class="event-icon success">
+                    <i class="fas fa-clipboard-check"></i>
+                </div>
+                <div class="event-content">
+                    <h4>Safety Inspection</h4>
+                    <p class="event-date">August 2024</p>
+                    <p>Passed state safety and emissions inspection</p>
+                    <div class="event-details">
+                        <span class="detail-badge success"><i class="fas fa-check-circle"></i> All Clear</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-event current">
+                <div class="event-icon primary">
+                    <i class="fas fa-car"></i>
+                </div>
+                <div class="event-content">
+                    <h4>Available for Sale</h4>
+                    <p class="event-date">December 2024</p>
+                    <p>Listed on AutoTrader with 12,500 miles</p>
+                    <div class="event-details">
+                        <span class="detail-badge primary"><i class="fas fa-star"></i> Excellent Condition</span>
+                        <span class="detail-badge"><i class="fas fa-shield-check"></i> Verified</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="history-summary">
+            <div class="summary-card">
+                <i class="fas fa-users"></i>
+                <div>
+                    <strong>1 Owner</strong>
+                    <p>Single owner vehicle</p>
+                </div>
+            </div>
+            <div class="summary-card">
+                <i class="fas fa-car-crash"></i>
+                <div>
+                    <strong>No Accidents</strong>
+                    <p>Clean accident history</p>
+                </div>
+            </div>
+            <div class="summary-card">
+                <i class="fas fa-tools"></i>
+                <div>
+                    <strong>2 Services</strong>
+                    <p>Regular maintenance</p>
+                </div>
+            </div>
+            <div class="summary-card">
+                <i class="fas fa-file-alt"></i>
+                <div>
+                    <strong>Clean Title</strong>
+                    <p>No title issues</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Market Alerts -->
+<section class="alerts-section">
+    <div class="section-container">
+        <div class="section-header-modern">
+            <div class="section-tag">
+                <i class="fas fa-bell"></i>
+                <span>Stay Updated</span>
+            </div>
+            <h2 class="section-title-modern">Market Alerts & Notifications</h2>
+            <p class="section-subtitle">Never miss a great deal or price change</p>
+        </div>
+
+        <div class="alerts-grid">
+            <div class="alert-card">
+                <div class="alert-icon">
+                    <i class="fas fa-tag"></i>
+                </div>
+                <div class="alert-content">
+                    <h3>Price Drop Alerts</h3>
+                    <p>Get instant notifications when saved cars drop in price</p>
+                    <label class="toggle-switch">
+                        <input type="checkbox" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="alert-card">
+                <div class="alert-icon">
+                    <i class="fas fa-plus-circle"></i>
+                </div>
+                <div class="alert-content">
+                    <h3>New Listings</h3>
+                    <p>Be first to know when cars matching your criteria are listed</p>
+                    <label class="toggle-switch">
+                        <input type="checkbox" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="alert-card">
+                <div class="alert-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="alert-content">
+                    <h3>Market Trends</h3>
+                    <p>Weekly insights on pricing trends for your favorite models</p>
+                    <label class="toggle-switch">
+                        <input type="checkbox">
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="alert-card">
+                <div class="alert-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="alert-content">
+                    <h3>Deal Alerts</h3>
+                    <p>Special deals and below-market opportunities</p>
+                    <label class="toggle-switch">
+                        <input type="checkbox" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="saved-searches">
+            <h3><i class="fas fa-bookmark"></i> Your Saved Searches</h3>
+            <div class="saved-search-item">
+                <div class="search-info">
+                    <i class="fas fa-search"></i>
+                    <div>
+                        <h4>Toyota Sedans under $30K</h4>
+                        <p>3 new matches today</p>
+                    </div>
+                </div>
+                <button class="view-matches-btn">View Matches</button>
+            </div>
+            <div class="saved-search-item">
+                <div class="search-info">
+                    <i class="fas fa-search"></i>
+                    <div>
+                        <h4>SUVs with AWD</h4>
+                        <p>1 new match today</p>
+                    </div>
+                </div>
+                <button class="view-matches-btn">View Matches</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Virtual Showroom -->
+<section class="showroom-section">
+    <div class="section-container">
+        <div class="section-header-modern">
+            <div class="section-tag">
+                <i class="fas fa-cube"></i>
+                <span>360° Experience</span>
+            </div>
+            <h2 class="section-title-modern">Virtual Showroom</h2>
+            <p class="section-subtitle">Explore every detail with our interactive 360° viewer</p>
+        </div>
+
+        <div class="showroom-wrapper">
+            <div class="showroom-main">
+                <div class="car-viewer">
+                    <img src="https://images.unsplash.com/photo-1617531653520-bd466bfc81ac?w=1200&q=80" alt="2024 BMW M4" class="showroom-car-image" id="showroomCarImage">
+                    <div class="viewer-controls">
+                        <button class="view-btn active" data-view="exterior">
+                            <i class="fas fa-car"></i>
+                            <span>Exterior</span>
+                        </button>
+                        <button class="view-btn" data-view="interior">
+                            <i class="fas fa-couch"></i>
+                            <span>Interior</span>
+                        </button>
+                        <button class="view-btn" data-view="engine">
+                            <i class="fas fa-cog"></i>
+                            <span>Engine</span>
+                        </button>
+                        <button class="view-btn" data-view="wheels">
+                            <i class="fas fa-compact-disc"></i>
+                            <span>Wheels</span>
+                        </button>
+                    </div>
+                    <button class="fullscreen-btn"><i class="fas fa-expand"></i></button>
+                    <div class="car-info-badge">
+                        <h3>2024 BMW M4 Competition</h3>
+                        <p><i class="fas fa-palette"></i> Isle of Man Green Metallic</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="showroom-sidebar">
+                <div class="color-picker">
+                    <h4><i class="fas fa-palette"></i> Choose Color</h4>
+                    <div class="colors-grid">
+                        <div class="color-item active" data-color="green" style="background: #1a4d2e" title="Isle of Man Green"></div>
+                        <div class="color-item" data-color="black" style="background: #000000" title="Black Sapphire"></div>
+                        <div class="color-item" data-color="white" style="background: #f5f5f5" title="Alpine White"></div>
+                        <div class="color-item" data-color="blue" style="background: #1e3a8a" title="Portimao Blue"></div>
+                        <div class="color-item" data-color="red" style="background: #dc2626" title="Toronto Red"></div>
+                        <div class="color-item" data-color="gray" style="background: #6b7280" title="Brooklyn Gray"></div>
+                    </div>
+                </div>
+
+                <div class="features-panel">
+                    <h4><i class="fas fa-star"></i> Key Features</h4>
+                    <div class="feature-list">
+                        <div class="feature-row">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <div>
+                                <strong>503 HP</strong>
+                                <span>Twin-Turbo I6</span>
+                            </div>
+                        </div>
+                        <div class="feature-row">
+                            <i class="fas fa-bolt"></i>
+                            <div>
+                                <strong>0-60 MPH</strong>
+                                <span>3.8 Seconds</span>
+                            </div>
+                        </div>
+                        <div class="feature-row">
+                            <i class="fas fa-road"></i>
+                            <div>
+                                <strong>M Sport Diff</strong>
+                                <span>Active M Differential</span>
+                            </div>
+                        </div>
+                        <div class="feature-row">
+                            <i class="fas fa-wifi"></i>
+                            <div>
+                                <strong>Heads-Up Display</strong>
+                                <span>Full Color HUD</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="btn-showroom-primary">
+                        <i class="fas fa-phone"></i>
+                        Schedule Test Drive
+                    </button>
+                    <button class="btn-showroom-secondary">
+                        <i class="fas fa-calculator"></i>
+                        Get Financing
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Dealer Network -->
+<section class="dealer-network-section">
+    <div class="section-container">
+        <div class="section-header-modern">
+            <div class="section-tag">
+                <i class="fas fa-map-marked-alt"></i>
+                <span>Trusted Partners</span>
+            </div>
+            <h2 class="section-title-modern">Verified Dealer Network</h2>
+            <p class="section-subtitle">Connect with certified dealers in your area</p>
+        </div>
+
+        <div class="dealer-search">
+            <div class="search-box">
+                <i class="fas fa-map-marker-alt"></i>
+                <input type="text" placeholder="Enter your city or ZIP code" class="search-input">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="search-filters">
+                <button class="filter-chip active"><i class="fas fa-car"></i> All Dealers</button>
+                <button class="filter-chip"><i class="fas fa-certificate"></i> Certified Only</button>
+                <button class="filter-chip"><i class="fas fa-star"></i> Top Rated</button>
+            </div>
+        </div>
+
+        <div class="dealers-grid">
+            <div class="dealer-card-modern">
+                <div class="dealer-badge">Certified</div>
+                <div class="dealer-image">
+                    <img src="https://images.unsplash.com/photo-1562911791-c7a97b729ec5?w=400&q=80" alt="Premium Auto Group">
+                </div>
+                <div class="dealer-content">
+                    <div class="dealer-top">
+                        <div class="dealer-logo-circle">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <div>
+                            <h3>Premium Auto Group</h3>
+                            <div class="dealer-rating-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.8 (234)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dealer-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>2.3 mi</span>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-car"></i>
+                            <span>45 cars</span>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Open Now</span>
+                        </div>
+                    </div>
+                    <div class="dealer-btns">
+                        <button class="btn-dealer-contact"><i class="fas fa-phone"></i></button>
+                        <button class="btn-dealer-contact"><i class="fas fa-envelope"></i></button>
+                        <button class="btn-dealer-primary">View Inventory</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dealer-card-modern">
+                <div class="dealer-badge best">Best Rated</div>
+                <div class="dealer-image">
+                    <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=400&q=80" alt="Elite Motors">
+                </div>
+                <div class="dealer-content">
+                    <div class="dealer-top">
+                        <div class="dealer-logo-circle">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <div>
+                            <h3>Elite Motors</h3>
+                            <div class="dealer-rating-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>5.0 (189)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dealer-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>5.7 mi</span>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-car"></i>
+                            <span>62 cars</span>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Open Now</span>
+                        </div>
+                    </div>
+                    <div class="dealer-btns">
+                        <button class="btn-dealer-contact"><i class="fas fa-phone"></i></button>
+                        <button class="btn-dealer-contact"><i class="fas fa-envelope"></i></button>
+                        <button class="btn-dealer-primary">View Inventory</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dealer-card-modern">
+                <div class="dealer-badge">Certified</div>
+                <div class="dealer-image">
+                    <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=400&q=80" alt="Metro Car Center">
+                </div>
+                <div class="dealer-content">
+                    <div class="dealer-top">
+                        <div class="dealer-logo-circle">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div>
+                            <h3>Metro Car Center</h3>
+                            <div class="dealer-rating-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>4.2 (156)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dealer-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>8.1 mi</span>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-car"></i>
+                            <span>38 cars</span>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Closes 8PM</span>
+                        </div>
+                    </div>
+                    <div class="dealer-btns">
+                        <button class="btn-dealer-contact"><i class="fas fa-phone"></i></button>
+                        <button class="btn-dealer-contact"><i class="fas fa-envelope"></i></button>
+                        <button class="btn-dealer-primary">View Inventory</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Trade-In Estimator -->
+<section class="tradein-modern-section">
+    <div class="section-container">
+        <div class="section-header-modern">
+            <div class="section-tag">
+                <i class="fas fa-exchange-alt"></i>
+                <span>Instant Valuation</span>
+            </div>
+            <h2 class="section-title-modern">Instant Trade-In Value</h2>
+            <p class="section-subtitle">Get your vehicle's market value in seconds</p>
+        </div>
+
+        <div class="tradein-wrapper">
+            <div class="tradein-calculator">
+                <div class="calculator-header">
+                    <i class="fas fa-calculator"></i>
+                    <h3>Value Calculator</h3>
+                    <p>Fill in your vehicle details</p>
+                </div>
+
+                <div class="calculator-form">
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label><i class="fas fa-calendar"></i> Year</label>
+                            <select class="modern-select">
+                                <option>2024</option>
+                                <option>2023</option>
+                                <option selected>2021</option>
+                                <option>2020</option>
+                                <option>2019</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label><i class="fas fa-car"></i> Make</label>
+                            <select class="modern-select">
+                                <option>Select Make</option>
+                                <option selected>Toyota</option>
+                                <option>Honda</option>
+                                <option>Ford</option>
+                                <option>BMW</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label><i class="fas fa-car-side"></i> Model</label>
+                            <select class="modern-select">
+                                <option>Select Model</option>
+                                <option selected>Camry</option>
+                                <option>Corolla</option>
+                                <option>RAV4</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label><i class="fas fa-award"></i> Trim</label>
+                            <select class="modern-select">
+                                <option>Select Trim</option>
+                                <option>LE</option>
+                                <option selected>SE</option>
+                                <option>XLE</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input-group full-width">
+                        <label><i class="fas fa-tachometer-alt"></i> Mileage</label>
+                        <input type="number" class="modern-input" placeholder="Enter mileage" value="45000">
+                    </div>
+
+                    <div class="condition-selector">
+                        <label class="condition-label"><i class="fas fa-clipboard-check"></i> Condition</label>
+                        <div class="condition-pills">
+                            <label class="condition-pill">
+                                <input type="radio" name="condition" value="excellent">
+                                <span><i class="fas fa-gem"></i> Excellent</span>
+                            </label>
+                            <label class="condition-pill active">
+                                <input type="radio" name="condition" value="good" checked>
+                                <span><i class="fas fa-thumbs-up"></i> Good</span>
+                            </label>
+                            <label class="condition-pill">
+                                <input type="radio" name="condition" value="fair">
+                                <span><i class="fas fa-hand-paper"></i> Fair</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button class="calculate-value-btn">
+                        <i class="fas fa-calculator"></i>
+                        Calculate My Value
+                    </button>
+                </div>
+            </div>
+
+            <div class="tradein-results">
+                <div class="results-vehicle">
+                    <img src="https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=400&q=80" alt="2021 Toyota Camry SE">
+                    <div class="vehicle-info-overlay">
+                        <h4>2021 Toyota Camry SE</h4>
+                        <p>45,000 miles • Good Condition</p>
+                    </div>
+                </div>
+
+                <div class="value-display">
+                    <div class="value-box highlight">
+                        <div class="value-icon"><i class="fas fa-dollar-sign"></i></div>
+                        <div class="value-content">
+                            <span class="value-label">Your Trade-In Value</span>
+                            <span class="value-price">$18,500</span>
+                            <span class="value-range">$17,800 - $19,200</span>
+                        </div>
+                    </div>
+                    <div class="value-box">
+                        <div class="value-icon secondary"><i class="fas fa-chart-line"></i></div>
+                        <div class="value-content">
+                            <span class="value-label">Private Sale Value</span>
+                            <span class="value-price">$21,200</span>
+                            <span class="value-range">$20,500 - $22,000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="value-factors">
+                    <h4><i class="fas fa-chart-pie"></i> Value Breakdown</h4>
+                    <div class="factor-bar">
+                        <div class="factor-row">
+                            <span>Base Market Value</span>
+                            <span class="factor-amount">$20,000</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                    <div class="factor-bar positive">
+                        <div class="factor-row">
+                            <span><i class="fas fa-arrow-up"></i> Low Mileage Bonus</span>
+                            <span class="factor-amount">+$1,500</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="factor-bar negative">
+                        <div class="factor-row">
+                            <span><i class="fas fa-arrow-down"></i> Condition Adjustment</span>
+                            <span class="factor-amount">-$300</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 15%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action-btns">
+                    <button class="btn-download"><i class="fas fa-download"></i> Download Report</button>
+                    <button class="btn-get-offers"><i class="fas fa-handshake"></i> Get Dealer Offers</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 🌟 REVOLUTIONARY HOW IT WORKS SECTION 🌟 -->
+<section class="revolutionary-how" id="how">
+    <!-- Particle System Canvas -->
+    <canvas id="particleCanvas" class="particle-canvas"></canvas>
+    
+    <!-- Floating Orbs Background -->
+    <div class="floating-orbs">
+        <div class="orb-float orb-1"></div>
+        <div class="orb-float orb-2"></div>
+        <div class="orb-float orb-3"></div>
+        <div class="orb-float orb-4"></div>
+    </div>
+
+    <!-- Animated Mesh Grid -->
+    <div class="mesh-grid">
+        <div class="mesh-line horizontal" style="top: 20%;"></div>
+        <div class="mesh-line horizontal" style="top: 50%;"></div>
+        <div class="mesh-line horizontal" style="top: 80%;"></div>
+        <div class="mesh-line vertical" style="left: 25%;"></div>
+        <div class="mesh-line vertical" style="left: 50%;"></div>
+        <div class="mesh-line vertical" style="left: 75%;"></div>
+    </div>
+
+    <div class="section-container">
+        <!-- Epic Header -->
+        <div class="epic-header" data-aos="fade-up">
+            <div class="header-badge-epic">
+                <div class="badge-glow"></div>
+                <i class="fas fa-rocket"></i>
+                <span>Revolutionary Process</span>
+            </div>
+            <h2 class="epic-title">
+                How The Magic
+                <span class="word-morph" data-words='["Happens", "Works", "Unfolds", "Begins"]'>Happens</span>
+            </h2>
+            <p class="epic-subtitle">
+                <span class="typing-text">Transform your car buying experience in 3 revolutionary steps</span>
+                <span class="cursor-blink">|</span>
+            </p>
+        </div>
+
+        <!-- 3D Floating Cards -->
+        <div class="cards-3d-container">
+            <!-- Step 1: Search -->
+            <div class="card-3d" data-step="1" data-aos="flip-left" data-aos-delay="100">
+                <div class="card-3d-inner">
+                    <!-- Front Face -->
+                    <div class="card-face card-front">
+                        <div class="card-glow-effect"></div>
+                        <div class="step-badge">STEP 01</div>
+                        
+                        <div class="card-icon-wrapper">
+                            <div class="icon-orbit">
+                                <div class="orbit-ring"></div>
+                                <div class="orbit-ring ring-2"></div>
+                                <div class="orbit-ring ring-3"></div>
+                            </div>
+                            <div class="icon-3d">
+                                <i class="fas fa-search-dollar"></i>
+                            </div>
+                            <div class="icon-particles">
+                                <span class="particle"></span>
+                                <span class="particle"></span>
+                                <span class="particle"></span>
+                                <span class="particle"></span>
+                            </div>
+                        </div>
+
+                        <h3 class="card-title">Smart Search</h3>
+                        <p class="card-description">AI-powered search across 8 countries with real-time pricing</p>
+
+                        <div class="card-stats">
+                            <div class="stat-item">
+                                <div class="stat-icon"><i class="fas fa-database"></i></div>
+                                <span class="stat-value">120K+</span>
+                                <span class="stat-label">Vehicles</span>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-icon"><i class="fas fa-globe"></i></div>
+                                <span class="stat-value">8</span>
+                                <span class="stat-label">Countries</span>
+                            </div>
+                        </div>
+
+                        <div class="card-features">
+                            <div class="feature-pill">
+                                <i class="fas fa-bolt"></i>
+                                Instant Results
+                            </div>
+                            <div class="feature-pill">
+                                <i class="fas fa-shield-alt"></i>
+                                100% Accurate
+                            </div>
+                        </div>
+
+                        <button class="flip-card-btn">
+                            <span>Learn More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+                    <!-- Back Face -->
+                    <div class="card-face card-back">
+                        <div class="back-content">
+                            <h4>Advanced Features</h4>
+                            <ul class="feature-list">
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Multi-currency support</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Local market pricing</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Budget optimization</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Real-time updates</span>
+                                </li>
+                            </ul>
+                            <button class="flip-card-btn back-btn">
+                                <i class="fas fa-arrow-left"></i>
+                                <span>Back</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2: Analysis -->
+            <div class="card-3d" data-step="2" data-aos="flip-left" data-aos-delay="300">
+                <div class="card-3d-inner">
+                    <!-- Front Face -->
+                    <div class="card-face card-front">
+                        <div class="card-glow-effect"></div>
+                        <div class="step-badge highlight">STEP 02</div>
+                        
+                        <div class="card-icon-wrapper">
+                            <div class="icon-orbit">
+                                <div class="orbit-ring"></div>
+                                <div class="orbit-ring ring-2"></div>
+                                <div class="orbit-ring ring-3"></div>
+                            </div>
+                            <div class="icon-3d">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="icon-particles">
+                                <span class="particle"></span>
+                                <span class="particle"></span>
+                                <span class="particle"></span>
+                                <span class="particle"></span>
+                            </div>
+                        </div>
+
+                        <h3 class="card-title">AI Analysis</h3>
+                        <p class="card-description">Deep learning algorithms calculate profit potential instantly</p>
+
+                        <div class="card-stats">
+                            <div class="stat-item">
+                                <div class="stat-icon"><i class="fas fa-microchip"></i></div>
+                                <span class="stat-value">0.3s</span>
+                                <span class="stat-label">Analysis Time</span>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-icon"><i class="fas fa-chart-line"></i></div>
+                                <span class="stat-value">98%</span>
+                                <span class="stat-label">Accuracy</span>
+                            </div>
+                        </div>
+
+                        <div class="card-features">
+                            <div class="feature-pill">
+                                <i class="fas fa-robot"></i>
+                                Neural Network
+                            </div>
+                            <div class="feature-pill">
+                                <i class="fas fa-satellite-dish"></i>
+                                Live Data
+                            </div>
+                        </div>
+
+                        <button class="flip-card-btn">
+                            <span>Learn More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+                    <!-- Back Face -->
+                    <div class="card-face card-back">
+                        <div class="back-content">
+                            <h4>AI Capabilities</h4>
+                            <ul class="feature-list">
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Repair cost prediction</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Market demand analysis</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>ROI calculations</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Risk assessment</span>
+                                </li>
+                            </ul>
+                            <button class="flip-card-btn back-btn">
+                                <i class="fas fa-arrow-left"></i>
+                                <span>Back</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3: Results -->
+            <div class="card-3d" data-step="3" data-aos="flip-left" data-aos-delay="500">
+                <div class="card-3d-inner">
+                    <!-- Front Face -->
+                    <div class="card-face card-front">
+                        <div class="card-glow-effect"></div>
+                        <div class="step-badge gold">STEP 03</div>
+                        
+                        <div class="card-icon-wrapper">
+                            <div class="icon-orbit">
+                                <div class="orbit-ring"></div>
+                                <div class="orbit-ring ring-2"></div>
+                                <div class="orbit-ring ring-3"></div>
+                            </div>
+                            <div class="icon-3d">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div class="icon-particles">
+                                <span class="particle"></span>
+                                <span class="particle"></span>
+                                <span class="particle"></span>
+                                <span class="particle"></span>
+                            </div>
+                        </div>
+
+                        <h3 class="card-title">Get Results</h3>
+                        <p class="card-description">Ranked recommendations with detailed profit breakdowns</p>
+
+                        <div class="card-stats">
+                            <div class="stat-item">
+                                <div class="stat-icon"><i class="fas fa-medal"></i></div>
+                                <span class="stat-value">Top 3</span>
+                                <span class="stat-label">Best Deals</span>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-icon"><i class="fas fa-dollar-sign"></i></div>
+                                <span class="stat-value">$8K</span>
+                                <span class="stat-label">Avg Profit</span>
+                            </div>
+                        </div>
+
+                        <div class="card-features">
+                            <div class="feature-pill">
+                                <i class="fas fa-star"></i>
+                                Premium Insights
+                            </div>
+                            <div class="feature-pill">
+                                <i class="fas fa-file-pdf"></i>
+                                PDF Reports
+                            </div>
+                        </div>
+
+                        <button class="flip-card-btn">
+                            <span>Learn More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+                    <!-- Back Face -->
+                    <div class="card-face card-back">
+                        <div class="back-content">
+                            <h4>Result Details</h4>
+                            <ul class="feature-list">
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Profit projections</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Risk scores</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Market insights</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Action plans</span>
+                                </li>
+                            </ul>
+                            <button class="flip-card-btn back-btn">
+                                <i class="fas fa-arrow-left"></i>
+                                <span>Back</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interactive Flow Visualization -->
+        <div class="flow-visualization" data-aos="fade-up" data-aos-delay="700">
+            <div class="flow-line">
+                <div class="flow-dot dot-1"></div>
+                <div class="flow-dot dot-2"></div>
+                <div class="flow-dot dot-3"></div>
+                <div class="flow-pulse"></div>
+            </div>
+        </div>
+
+        <!-- Success Metrics -->
+        <div class="success-metrics" data-aos="zoom-in" data-aos-delay="900">
+            <div class="metric-card">
+                <div class="metric-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="metric-content">
+                    <span class="metric-number" data-target="12500">0</span>
+                    <span class="metric-label">Active Users</span>
+                </div>
+                <div class="metric-trend up">
+                    <i class="fas fa-arrow-up"></i>
+                    <span>+34%</span>
+                </div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-icon">
+                    <i class="fas fa-hand-holding-usd"></i>
+                </div>
+                <div class="metric-content">
+                    <span class="metric-number" data-target="2400000" data-prefix="$">$0</span>
+                    <span class="metric-label">Total Profit Generated</span>
+                </div>
+                <div class="metric-trend up">
+                    <i class="fas fa-arrow-up"></i>
+                    <span>+128%</span>
+                </div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-icon">
+                    <i class="fas fa-percentage"></i>
+                </div>
+                <div class="metric-content">
+                    <span class="metric-number" data-target="94" data-suffix="%">0%</span>
+                    <span class="metric-label">Success Rate</span>
+                </div>
+                <div class="metric-trend up">
+                    <i class="fas fa-arrow-up"></i>
+                    <span>+12%</span>
+                </div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <div class="metric-content">
+                    <span class="metric-number" data-target="0.3" data-suffix="s">0s</span>
+                    <span class="metric-label">Avg. Analysis Time</span>
+                </div>
+                <div class="metric-trend down">
+                    <i class="fas fa-arrow-down"></i>
+                    <span>-68%</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Epic CTA -->
+        <div class="epic-cta" data-aos="fade-up" data-aos-delay="1100">
+            <div class="cta-glow-orb"></div>
+            <h3 class="cta-title">Ready to Find Your Perfect Deal?</h3>
+            <p class="cta-description">Join thousands of successful car flippers making data-driven decisions</p>
+            <button class="mega-cta-button" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                <span class="button-text">Start Your Journey</span>
+                <div class="button-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <div class="button-particles">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="cta-badges">
+                <span class="cta-badge">
+                    <i class="fas fa-shield-check"></i>
+                    No Credit Card Required
+                </span>
+                <span class="cta-badge">
+                    <i class="fas fa-infinity"></i>
+                    Free Forever
+                </span>
+                <span class="cta-badge">
+                    <i class="fas fa-bolt"></i>
+                    Instant Access
+                </span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Ultra Modern Footer -->
+<footer class="ultra-footer">
+    <!-- Gradient Orbs Background -->
+    <div class="footer-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- Animated Grid Lines -->
+    <div class="footer-grid-bg">
+        <div class="grid-line"></div>
+        <div class="grid-line"></div>
+        <div class="grid-line"></div>
+        <div class="grid-line"></div>
+    </div>
+
+    <div class="ultra-footer-content">
+        <!-- Top Section with Logo and CTA -->
+        <div class="footer-hero">
+            <div class="footer-logo-section">
+                <div class="logo-icon-animated">
+                    <i class="fas fa-car-side"></i>
+                    <div class="logo-ring"></div>
+                    <div class="logo-ring ring-2"></div>
+                </div>
+                <div class="logo-text">
+                    <h2>AutoTrader<span class="gradient-text">Pro</span></h2>
+                    <p class="tagline">Next-Gen Car Flipping Intelligence</p>
+                </div>
+            </div>
+            
+            <div class="footer-cta-box">
+                <div class="cta-content">
+                    <h3>Start Finding Profitable Cars</h3>
+                    <p>Join 10,000+ smart flippers making data-driven decisions</p>
+                    <button class="cta-button" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                        <span>Get Started</span>
+                        <i class="fas fa-rocket"></i>
+                        <div class="button-glow"></div>
+                    </button>
+                </div>
+                <div class="cta-stats">
+                    <div class="cta-stat">
+                        <strong>$2.4M+</strong>
+                        <span>Total Profit Made</span>
+                    </div>
+                    <div class="cta-stat">
+                        <strong>94%</strong>
+                        <span>Success Rate</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Grid -->
+        <div class="footer-nav-grid">
+            <div class="footer-col">
+                <h4>Platform</h4>
+                <ul>
+                    <li><a href="#"><i class="fas fa-search"></i>Search Cars</a></li>
+                    <li><a href="#calculator"><i class="fas fa-calculator"></i>Profit Calculator</a></li>
+                    <li><a href="#"><i class="fas fa-chart-line"></i>Market Trends</a></li>
+                    <li><a href="#"><i class="fas fa-bell"></i>Price Alerts</a></li>
+                    <li><a href="results.html"><i class="fas fa-history"></i>My Searches</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#"><i class="fas fa-graduation-cap"></i>Learning Hub</a></li>
+                    <li><a href="#"><i class="fas fa-book-open"></i>Flip Guide</a></li>
+                    <li><a href="#"><i class="fas fa-video"></i>Video Tutorials</a></li>
+                    <li><a href="#"><i class="fas fa-podcast"></i>Podcast</a></li>
+                    <li><a href="#"><i class="fas fa-newspaper"></i>Success Stories</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#"><i class="fas fa-info-circle"></i>About Us</a></li>
+                    <li><a href="#"><i class="fas fa-briefcase"></i>Careers</a></li>
+                    <li><a href="#"><i class="fas fa-handshake"></i>Partners</a></li>
+                    <li><a href="#"><i class="fas fa-trophy"></i>Affiliates</a></li>
+                    <li><a href="#"><i class="fas fa-envelope"></i>Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-col-newsletter">
+                <h4>Stay Ahead</h4>
+                <p>Weekly market insights, profitable deals, and pro tips delivered to your inbox.</p>
+                <form class="modern-newsletter" onsubmit="handleNewsletterSubmit(event); return false;">
+                    <div class="newsletter-wrapper">
+                        <input type="email" id="newsletterEmail" placeholder="your@email.com" required>
+                        <button type="submit">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                    <div class="newsletter-checkboxes">
+                        <label class="checkbox-label">
+                            <input type="checkbox" checked>
+                            <span>Market updates</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" checked>
+                            <span>Deal alerts</span>
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Social and Trust Indicators -->
+        <div class="footer-bottom-section">
+            <div class="social-and-trust">
+                <div class="social-icons-modern">
+                    <a href="#" class="social-btn" data-social="facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-btn" data-social="twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-btn" data-social="instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-btn" data-social="linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-btn" data-social="youtube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" class="social-btn" data-social="tiktok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+
+                <div class="trust-badges-modern">
+                    <div class="trust-item">
+                        <i class="fas fa-shield-check"></i>
+                        <span>SSL Secured</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-lock"></i>
+                        <span>256-bit Encryption</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-user-shield"></i>
+                        <span>GDPR Compliant</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-award"></i>
+                        <span>Award Winning</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-legal-bar">
+                <div class="legal-left">
+                    <span class="copyright">
+                        © <span id="currentYear">2025</span> AutoTrader Pro. All rights reserved.
+                    </span>
+                    <div class="legal-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                        <a href="#">Sitemap</a>
+                    </div>
+                </div>
+                <div class="legal-right">
+                    <button class="theme-toggle-footer" onclick="toggleTheme()">
+                        <i class="fas fa-moon"></i>
+                        <span>Dark Mode</span>
+                    </button>
+                    <div class="language-switcher">
+                        <i class="fas fa-globe"></i>
+                        <select>
+                            <option>English</option>
+                            <option>Español</option>
+                            <option>Français</option>
+                            <option>Deutsch</option>
+                            <option>中文</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Quick Actions -->
+    <div class="quick-actions-fab">
+        <button class="fab-trigger" id="fabTrigger">
+            <i class="fas fa-bolt"></i>
+            <span class="fab-pulse"></span>
+        </button>
+        <div class="fab-actions" id="fabActions">
+            <button class="fab-action" data-action="chat">
+                <i class="fas fa-comments"></i>
+                <span class="fab-label">Live Chat</span>
+            </button>
+            <button class="fab-action" data-action="help">
+                <i class="fas fa-question-circle"></i>
+                <span class="fab-label">Help Center</span>
+            </button>
+            <button class="fab-action" data-action="share">
+                <i class="fas fa-share-nodes"></i>
+                <span class="fab-label">Share App</span>
+            </button>
+        </div>
+    </div>
+</footer>
+
+<!-- Saved Cars Wishlist Floating Button -->
+<button class="wishlist-fab" id="wishlistBtn">
+    <i class="fas fa-heart"></i>
+    <span class="wishlist-count">3</span>
+</button>
+
+<!-- Wishlist Sidebar -->
+<div class="wishlist-sidebar" id="wishlistSidebar">
+    <div class="wishlist-header">
+        <h3><i class="fas fa-heart"></i> Saved Cars</h3>
+        <button class="close-wishlist"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="wishlist-content">
+        <div class="wishlist-item">
+            <div class="wishlist-img"><i class="fas fa-car"></i></div>
+            <div class="wishlist-info">
+                <h4>Toyota Camry</h4>
+                <p class="wishlist-price">$28,500</p>
+                <div class="wishlist-alert">
+                    <i class="fas fa-bell"></i>
+                    <span>Price Alert: ON</span>
+                </div>
+            </div>
+            <button class="remove-wishlist"><i class="fas fa-trash"></i></button>
+        </div>
+        <div class="wishlist-item">
+            <div class="wishlist-img"><i class="fas fa-car"></i></div>
+            <div class="wishlist-info">
+                <h4>BMW 3 Series</h4>
+                <p class="wishlist-price">$42,800</p>
+                <div class="wishlist-alert inactive">
+                    <i class="fas fa-bell-slash"></i>
+                    <span>Price Alert: OFF</span>
+                </div>
+            </div>
+            <button class="remove-wishlist"><i class="fas fa-trash"></i></button>
+        </div>
+        <div class="wishlist-item">
+            <div class="wishlist-img"><i class="fas fa-car"></i></div>
+            <div class="wishlist-info">
+                <h4>Honda Civic</h4>
+                <p class="wishlist-price">$24,200</p>
+                <div class="wishlist-alert">
+                    <i class="fas fa-bell"></i>
+                    <span>Price Alert: ON</span>
+                </div>
+            </div>
+            <button class="remove-wishlist"><i class="fas fa-trash"></i></button>
+        </div>
+    </div>
+    <div class="wishlist-footer">
+        <button class="btn-compare-wishlist">Compare Selected</button>
+        <button class="btn-export-wishlist">Export List</button>
+    </div>
+</div>
+
+<!-- Live Chat Widget -->
+<div class="chat-widget" id="chatWidget">
+    <div class="chat-bubble" id="chatBubble">
+        <i class="fas fa-comments"></i>
+        <span class="chat-badge">1</span>
+    </div>
+    <div class="chat-window" id="chatWindow">
+        <div class="chat-header">
+            <div class="agent-info">
+                <div class="agent-avatar">
+                    <i class="fas fa-user-headset"></i>
+                    <div class="status-dot"></div>
+                </div>
+                <div>
+                    <h4>Support Agent</h4>
+                    <p>Online</p>
+                </div>
+            </div>
+            <div class="chat-actions">
+                <button class="minimize-chat"><i class="fas fa-minus"></i></button>
+                <button class="close-chat"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+        <div class="chat-messages">
+            <div class="message agent">
+                <div class="message-avatar"><i class="fas fa-robot"></i></div>
+                <div class="message-content">
+                    <p>Hi! I'm your AI assistant. How can I help you today?</p>
+                    <span class="message-time">Just now</span>
+                </div>
+            </div>
+        </div>
+        <div class="chat-input-area">
+            <button class="chat-attachment"><i class="fas fa-paperclip"></i></button>
+            <input type="text" placeholder="Type your message..." class="chat-input">
+            <button class="chat-send"><i class="fas fa-paper-plane"></i></button>
+        </div>
+        <div class="quick-actions">
+            <button class="quick-btn">Get Valuation</button>
+            <button class="quick-btn">Find Cars</button>
+            <button class="quick-btn">Talk to Human</button>
+        </div>
+    </div>
+</div>
+
+<!-- Social Proof Ticker -->
+<div class="social-proof-ticker">
+    <div class="ticker-item">
+        <div class="ticker-icon"><i class="fas fa-check-circle"></i></div>
+        <p><strong>John from NYC</strong> just bought a Toyota Camry</p>
+        <span class="ticker-time">2 min ago</span>
+    </div>
+</div>
+
+<!-- Scroll to Top Button -->
+<button id="scrollTop" class="scroll-top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- Performance optimization script (loaded first) -->
+<script src="js/performance.js"></script>
+
+<!-- Optimize script loading -->
+<script src="js/app.js" defer></script>
+
+<!-- Lazy load feature scripts only when needed -->
+<script>
+    // Remove preload class after page loads to enable smooth animations
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            document.body.classList.remove('preload');
+        }, 100);
+    });
+    
+    // Enhanced Parallax Effect
+    const parallaxLayer = document.getElementById('parallaxLayer');
+    if (parallaxLayer) {
+        document.addEventListener('mousemove', (e) => {
+            const xPos = (e.clientX / window.innerWidth - 0.5) * 30;
+            const yPos = (e.clientY / window.innerHeight - 0.5) * 30;
+            parallaxLayer.style.transform = `translate(${xPos}px, ${yPos}px)`;
+        });
+    }
+    
+    // Hero Spotlight Follow Mouse
+    const spotlight = document.querySelector('.hero-spotlight');
+    if (spotlight) {
+        document.addEventListener('mousemove', (e) => {
+            const x = (e.clientX / window.innerWidth) * 100;
+            const y = (e.clientY / window.innerHeight) * 100;
+            spotlight.style.background = `radial-gradient(circle at ${x}% ${y}%, rgba(0,174,239,0.2) 0%, transparent 70%)`;
+        });
+    }
+    
+    // Lazy load heavy features
+    const lazyLoadFeatures = () => {
+        const script1 = document.createElement('script');
+        script1.src = 'js/new-features.js';
+        script1.defer = true;
+        document.body.appendChild(script1);
+        
+        const script2 = document.createElement('script');
+        script2.src = 'js/revolutionary-how.js';
+        script2.defer = true;
+        document.body.appendChild(script2);
+    };
+    
+    // Load features after initial page load
+    if (document.readyState === 'complete') {
+        setTimeout(lazyLoadFeatures, 1000);
+    } else {
+        window.addEventListener('load', () => setTimeout(lazyLoadFeatures, 1000));
+    }
+</script>
+</body>
+</html>

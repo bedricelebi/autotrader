@@ -1,0 +1,390 @@
+/* ==========================================
+   🎯 SMOOTH ANIMATIONS & TIMING CONTROL
+   ========================================== */
+
+/* Global smooth transitions */
+* {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Slower, smoother animations */
+section {
+    animation-duration: 1.2s !important;
+    transition-duration: 0.8s !important;
+}
+
+.feature-card,
+.tracker-card,
+.comparison-card,
+.stat-card,
+.insight-card,
+.testimonial-card,
+.dealer-card-modern,
+.card-3d {
+    animation-duration: 0.9s !important;
+    transition-duration: 0.6s !important;
+}
+
+/* Smooth hover transitions */
+.feature-card:hover,
+.tracker-card:hover,
+.btn:hover,
+button:hover,
+.nav-link:hover {
+    transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+}
+
+/* Smoother scroll reveal */
+@keyframes smoothFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(40px) scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.animate-smooth {
+    animation: smoothFadeIn 1s ease-out forwards;
+}
+
+/* Delay animations properly */
+.delay-1 { animation-delay: 0.2s !important; }
+.delay-2 { animation-delay: 0.4s !important; }
+.delay-3 { animation-delay: 0.6s !important; }
+.delay-4 { animation-delay: 0.8s !important; }
+.delay-5 { animation-delay: 1s !important; }
+
+/* Smooth card entrance */
+.feature-card,
+.tracker-card {
+    animation: smoothFadeIn 0.8s ease-out;
+    animation-fill-mode: both;
+}
+
+/* Slower hover effects */
+.feature-card:hover {
+    transform: translateY(-8px) scale(1.01) !important;
+    transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+}
+
+/* Smooth button animations */
+.btn,
+button,
+.cta-button {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.btn:hover,
+button:hover {
+    transform: translateY(-2px) scale(1.03) !important;
+    transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+}
+
+.btn:active,
+button:active {
+    transform: translateY(0) scale(0.98) !important;
+    transition: all 0.2s ease !important;
+}
+
+/* Smooth input focus */
+input:focus,
+select:focus,
+textarea:focus {
+    transition: all 0.4s ease !important;
+}
+
+/* Slow down loading animations */
+@keyframes smoothSpin {
+    to { transform: rotate(360deg); }
+}
+
+.loading::after {
+    animation: smoothSpin 1.5s linear infinite !important;
+}
+
+/* Smooth progress bars */
+.progress-fill {
+    transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Slower gradient animations */
+@keyframes smoothGradient {
+    0%, 100% { 
+        opacity: 0.5; 
+        transform: translateX(0);
+    }
+    50% { 
+        opacity: 0.8; 
+        transform: translateX(5%);
+    }
+}
+
+.price-tracker-section::before,
+.comparison-section::before {
+    animation: smoothGradient 20s ease-in-out infinite !important;
+}
+
+/* Smooth orb animations */
+.orb-float,
+.floating-orbs .orb-float {
+    animation-duration: 25s !important;
+    animation-timing-function: ease-in-out !important;
+}
+
+/* Slower mesh animations */
+.mesh-line.horizontal,
+.mesh-line.vertical {
+    animation-duration: 6s !important;
+}
+
+/* Smooth icon rotations */
+.icon-wrapper:hover {
+    transform: rotateY(180deg) scale(1.1) !important;
+    transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+}
+
+/* Smooth 3D card flips */
+.card-3d-inner {
+    transition: transform 1.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Smooth metric counters */
+.metric-number {
+    transition: all 0.6s ease !important;
+}
+
+/* Smooth navbar */
+.navbar {
+    transition: all 0.5s ease !important;
+}
+
+.nav-link {
+    transition: all 0.4s ease !important;
+}
+
+/* Smooth scrollbar */
+::-webkit-scrollbar-thumb {
+    transition: background 0.3s ease !important;
+}
+
+/* Smooth modal/popup */
+.modal,
+.popup,
+.overlay {
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Smooth tab switching */
+.time-filter,
+.filter-tab {
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+}
+
+/* Smooth badge animations */
+.badge,
+.status-badge {
+    transition: all 0.3s ease !important;
+}
+
+/* Smooth chart animations */
+.mini-chart,
+.chart-bar {
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Smooth image loading */
+img {
+    transition: all 0.6s ease !important;
+}
+
+img:hover {
+    transform: scale(1.02) !important;
+    transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+}
+
+/* Smooth alerts */
+.alert-item {
+    transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+}
+
+.alert-item:hover {
+    transform: translateX(8px) !important;
+}
+
+/* Smooth dealer cards */
+.dealer-card-modern {
+    transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.dealer-card-modern:hover {
+    transform: translateY(-10px) !important;
+    transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+}
+
+/* Smooth showroom animations */
+.showroom-car-image {
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.color-option {
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+}
+
+/* Smooth filter chips */
+.filter-chip {
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+}
+
+.filter-chip:hover {
+    transform: scale(1.05) !important;
+}
+
+/* Smooth value displays */
+.value-box {
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.value-box:hover {
+    transform: translateY(-5px) !important;
+    transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+}
+
+/* Smooth footer animations */
+.footer-cta-box {
+    transition: all 0.6s ease !important;
+}
+
+/* Smooth social links */
+.social-link {
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+}
+
+.social-link:hover {
+    transform: translateY(-3px) scale(1.1) !important;
+}
+
+/* Prevent jarring animations on page load */
+.preload * {
+    animation-duration: 0s !important;
+    transition-duration: 0s !important;
+}
+
+/* Smooth particle movements */
+.particle,
+.icon-particles .particle {
+    animation-duration: 3s !important;
+    animation-timing-function: ease-in-out !important;
+}
+
+/* Smooth orbit rings */
+.orbit-ring {
+    animation-duration: 4s !important;
+}
+
+.orbit-ring.ring-2 {
+    animation-duration: 5s !important;
+}
+
+.orbit-ring.ring-3 {
+    animation-duration: 6s !important;
+}
+
+/* Smooth FAQ accordion */
+.faq-answer {
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Smooth testimonial transitions */
+.testimonial-card {
+    transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Smooth hero animations */
+.hero-title .title-line {
+    animation-duration: 1s !important;
+    animation-fill-mode: both;
+}
+
+.hero-title .title-line:nth-child(1) {
+    animation-delay: 0.2s !important;
+}
+
+.hero-title .title-line:nth-child(2) {
+    animation-delay: 0.4s !important;
+}
+
+.hero-title .title-line:nth-child(3) {
+    animation-delay: 0.6s !important;
+}
+
+/* Smooth floating shapes */
+.floating-shape {
+    animation-duration: 20s !important;
+    animation-timing-function: ease-in-out !important;
+}
+
+/* Smooth depth lines */
+.depth-line {
+    animation-duration: 15s !important;
+}
+
+/* Smooth cursor effects */
+.cursor-dot,
+.cursor-outline {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Smooth price value changes */
+.price-value,
+.stat-value {
+    transition: all 0.5s ease !important;
+}
+
+/* Smooth grid item entrance */
+.feature-grid > *,
+.tracker-grid > * {
+    animation: smoothFadeIn 0.8s ease-out;
+    animation-fill-mode: both;
+}
+
+.feature-grid > *:nth-child(1) { animation-delay: 0.1s; }
+.feature-grid > *:nth-child(2) { animation-delay: 0.2s; }
+.feature-grid > *:nth-child(3) { animation-delay: 0.3s; }
+.feature-grid > *:nth-child(4) { animation-delay: 0.4s; }
+.feature-grid > *:nth-child(5) { animation-delay: 0.5s; }
+.feature-grid > *:nth-child(6) { animation-delay: 0.6s; }
+
+/* Smooth border animations */
+.feature-card::after {
+    transition: all 0.6s ease !important;
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Smooth mobile interactions */
+@media (max-width: 768px) {
+    * {
+        transition-duration: 0.4s !important;
+    }
+    
+    .feature-card:hover {
+        transform: none !important;
+    }
+}
+
+/* Smooth print transitions */
+@media print {
+    * {
+        transition: none !important;
+        animation: none !important;
+    }
+}

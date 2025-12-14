@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Results - AutoTrader Global</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <style>
+        .results-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 120px 20px 60px;
+        }
+
+        .results-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .results-header h1 {
+            font-size: 42px;
+            background: linear-gradient(135deg, #ffffff 0%, #00AEEF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+        }
+
+        .search-summary {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .summary-item {
+            background: rgba(0,174,239,0.1);
+            padding: 10px 20px;
+            border-radius: 20px;
+            border: 1px solid rgba(0,174,239,0.3);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .summary-item i {
+            color: var(--primary-color);
+        }
+
+        .car-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .car-card {
+            background: var(--bg-card);
+            border-radius: 20px;
+            padding: 30px;
+            border: 1px solid var(--border-color);
+            backdrop-filter: blur(20px);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .car-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), #8a2be2);
+        }
+
+        .car-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0,174,239,0.3);
+        }
+
+        .rank-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--primary-color);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 18px;
+            box-shadow: 0 4px 15px rgba(0,174,239,0.5);
+        }
+
+        .car-header {
+            margin-bottom: 20px;
+        }
+
+        .car-title {
+            font-size: 26px;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 8px;
+        }
+
+        .car-year {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        .car-details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin: 25px 0;
+        }
+
+        .detail-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .detail-item i {
+            color: var(--primary-color);
+            width: 20px;
+        }
+
+        .detail-item span {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        .detail-item strong {
+            color: white;
+            margin-left: auto;
+        }
+
+        .profit-section {
+            background: rgba(0,174,239,0.05);
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .profit-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            font-size: 15px;
+        }
+
+        .profit-row:last-child {
+            margin-bottom: 0;
+            padding-top: 12px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .profit-highlight {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--success);
+        }
+
+        .roi-badge {
+            display: inline-block;
+            background: rgba(16,185,129,0.2);
+            color: var(--success);
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .demand-badge {
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .demand-high {
+            background: rgba(16,185,129,0.2);
+            color: var(--success);
+        }
+
+        .demand-medium {
+            background: rgba(245,158,11,0.2);
+            color: var(--warning);
+        }
+
+        .demand-low {
+            background: rgba(239,68,68,0.2);
+            color: var(--danger);
+        }
+
+        .car-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .btn-primary,
+        .btn-secondary {
+            flex: 1;
+            padding: 12px;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .btn-primary {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            border: 1px solid var(--border-color);
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255,255,255,0.05);
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .no-results i {
+            font-size: 80px;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .no-results h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .no-results p {
+            color: var(--text-secondary);
+            margin-bottom: 30px;
+        }
+
+        .back-btn {
+            position: fixed;
+            top: 90px;
+            left: 20px;
+            background: rgba(25,25,35,0.9);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 12px 20px;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+            backdrop-filter: blur(20px);
+            transition: all 0.3s ease;
+            z-index: 100;
+        }
+
+        .back-btn:hover {
+            background: var(--primary-color);
+            transform: translateX(-5px);
+        }
+
+        @media (max-width: 768px) {
+            .car-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .back-btn {
+                top: 70px;
+                left: 10px;
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+
+            .results-header h1 {
+                font-size: 32px;
+            }
+
+            .car-details {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <i class="fas fa-car"></i>
+                <span>AutoTrader Global</span>
+            </div>
+            <div class="nav-actions">
+                <button class="btn-outline" onclick="window.location.href='index.html'">
+                    <i class="fas fa-home"></i> Home
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <a href="index.html" class="back-btn">
+        <i class="fas fa-arrow-left"></i> New Search
+    </a>
+
+    <div class="results-container">
+        <div class="results-header">
+            <h1><i class="fas fa-trophy"></i> Top Car Recommendations</h1>
+            <p style="color: var(--text-secondary); font-size: 18px;">Based on your criteria, here are the best opportunities</p>
+            
+            <div class="search-summary" id="searchSummary"></div>
+        </div>
+
+        <div class="car-grid" id="resultsGrid"></div>
+
+        <div class="no-results" id="noResults" style="display: none;">
+            <i class="fas fa-search"></i>
+            <h2>No Cars Found</h2>
+            <p>Try adjusting your search criteria or budget</p>
+            <button class="btn-primary" onclick="window.location.href='index.html'" style="max-width: 200px; margin: 0 auto;">
+                <i class="fas fa-redo"></i> New Search
+            </button>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTop" class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Load search data and display results
+        document.addEventListener('DOMContentLoaded', () => {
+            loadResults();
+            setupScrollTop();
+        });
+
+        async function loadResults() {
+            const searchData = JSON.parse(localStorage.getItem('currentSearch') || '{}');
+            
+            if (!searchData.country || !searchData.budget) {
+                window.location.href = 'index.html';
+                return;
+            }
+
+            // Display search summary
+            displaySearchSummary(searchData);
+
+            // Load car data
+            try {
+                const response = await fetch('data/cars.json');
+                const data = await response.json();
+                
+                const countryCars = data[searchData.country] || [];
+                const filteredCars = filterCars(countryCars, searchData);
+                const sortedCars = sortCars(filteredCars, searchData.goal);
+                
+                displayResults(sortedCars.slice(0, 6));
+            } catch (error) {
+                console.error('Error loading cars:', error);
+                document.getElementById('noResults').style.display = 'block';
+            }
+        }
+
+        function displaySearchSummary(data) {
+            const summary = document.getElementById('searchSummary');
+            const currencyMap = {
+                'usa': '$', 'canada': 'CAD $', 'uk': '£', 'germany': '€',
+                'france': '€', 'turkey': '₺', 'uae': 'AED ', 'lebanon': 'L£'
+            };
+            
+            const currency = currencyMap[data.country] || '$';
+            
+            summary.innerHTML = `
+                <div class="summary-item">
+                    <i class="fas fa-flag"></i>
+                    <span>${data.country.toUpperCase()}</span>
+                </div>
+                <div class="summary-item">
+                    <i class="fas fa-wallet"></i>
+                    <span>${currency}${Number(data.budget).toLocaleString()}</span>
+                </div>
+                <div class="summary-item">
+                    <i class="fas fa-car"></i>
+                    <span>${data.carType}</span>
+                </div>
+                <div class="summary-item">
+                    <i class="fas fa-tools"></i>
+                    <span>${data.repairLevel} repairs</span>
+                </div>
+            `;
+        }
+
+        function filterCars(cars, criteria) {
+            return cars.filter(car => {
+                // Budget filter
+                if (car.price > Number(criteria.budget)) return false;
+                
+                // Car type filter
+                if (criteria.carType !== 'any' && car.type !== criteria.carType) return false;
+                
+                // Repair level filter
+                if (criteria.repairLevel === 'light' && car.repairLevel !== 'light') return false;
+                if (criteria.repairLevel === 'medium' && car.repairLevel === 'heavy') return false;
+                
+                // Advanced filters
+                if (criteria.maxAge && (2025 - car.year) > Number(criteria.maxAge)) return false;
+                if (criteria.maxMileage && car.mileage > Number(criteria.maxMileage)) return false;
+                if (criteria.fuelType && criteria.fuelType !== 'any' && car.fuelType !== criteria.fuelType) return false;
+                if (criteria.transmission && criteria.transmission !== 'any' && car.transmission !== criteria.transmission) return false;
+                
+                return true;
+            });
+        }
+
+        function sortCars(cars, goal) {
+            switch (goal) {
+                case 'profit':
+                    return cars.sort((a, b) => b.profit - a.profit);
+                case 'fast':
+                    return cars.sort((a, b) => a.daysToSell - b.daysToSell);
+                case 'lowrisk':
+                    return cars.sort((a, b) => {
+                        const demandScore = { 'very high': 4, 'high': 3, 'medium': 2, 'low': 1 };
+                        return (demandScore[b.marketDemand] || 0) - (demandScore[a.marketDemand] || 0);
+                    });
+                default: // balanced
+                    return cars.sort((a, b) => b.roi - a.roi);
+            }
+        }
+
+        function displayResults(cars) {
+            const grid = document.getElementById('resultsGrid');
+            const noResults = document.getElementById('noResults');
+            
+            if (cars.length === 0) {
+                noResults.style.display = 'block';
+                return;
+            }
+
+            const searchData = JSON.parse(localStorage.getItem('currentSearch') || '{}');
+            const currencyMap = {
+                'usa': '$', 'canada': 'CAD $', 'uk': '£', 'germany': '€',
+                'france': '€', 'turkey': '₺', 'uae': 'AED ', 'lebanon': 'L£'
+            };
+            const currency = currencyMap[searchData.country] || '$';
+
+            grid.innerHTML = cars.map((car, index) => `
+                <div class="car-card">
+                    <div class="rank-badge">#${index + 1}</div>
+                    
+                    <div class="car-header">
+                        <div class="car-title">${car.make} ${car.model}</div>
+                        <div class="car-year">${car.year} • ${car.mileage.toLocaleString()} miles</div>
+                    </div>
+
+                    <div class="car-details">
+                        <div class="detail-item">
+                            <i class="fas fa-car"></i>
+                            <span>Type</span>
+                            <strong>${car.type}</strong>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-gas-pump"></i>
+                            <span>Fuel</span>
+                            <strong>${car.fuelType}</strong>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-cog"></i>
+                            <span>Trans</span>
+                            <strong>${car.transmission}</strong>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Sell Time</span>
+                            <strong>${car.daysToSell} days</strong>
+                        </div>
+                    </div>
+
+                    <div style="margin: 15px 0;">
+                        <span class="demand-badge demand-${car.marketDemand.replace(' ', '-')}">
+                            <i class="fas fa-fire"></i> ${car.marketDemand} demand
+                        </span>
+                    </div>
+
+                    <div class="profit-section">
+                        <div class="profit-row">
+                            <span style="color: var(--text-secondary);">Purchase Price</span>
+                            <span style="color: white;">${currency}${car.price.toLocaleString()}</span>
+                        </div>
+                        <div class="profit-row">
+                            <span style="color: var(--text-secondary);">Repair Cost</span>
+                            <span style="color: white;">${currency}${car.repairCost.toLocaleString()}</span>
+                        </div>
+                        <div class="profit-row">
+                            <span style="color: var(--text-secondary);">Expected Sale</span>
+                            <span style="color: white;">${currency}${car.resaleValue.toLocaleString()}</span>
+                        </div>
+                        <div class="profit-row">
+                            <span style="font-weight: 700;">Estimated Profit</span>
+                            <span class="profit-highlight">${currency}${car.profit.toLocaleString()}</span>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center; margin: 15px 0;">
+                        <span class="roi-badge">
+                            <i class="fas fa-chart-line"></i> ${car.roi}% ROI
+                        </span>
+                    </div>
+
+                    <div class="car-actions">
+                        <button class="btn-primary" onclick="alert('Contact dealer feature coming soon!')">
+                            <i class="fas fa-phone"></i> Contact
+                        </button>
+                        <button class="btn-secondary" onclick="saveCarToFavorites(${car.id})">
+                            <i class="fas fa-heart"></i> Save
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function saveCarToFavorites(carId) {
+            alert('Car saved to favorites! (Feature coming soon)');
+        }
+
+        function setupScrollTop() {
+            const scrollTopBtn = document.getElementById('scrollTop');
+            
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 300) {
+                    scrollTopBtn.classList.add('visible');
+                } else {
+                    scrollTopBtn.classList.remove('visible');
+                }
+            });
+            
+            scrollTopBtn.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+    </script>
+</body>
+</html>

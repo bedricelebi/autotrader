@@ -1,0 +1,353 @@
+<!-- COPY ALL THESE SECTIONS AND ADD THEM TO index.html BEFORE THE FOOTER -->
+
+<!-- Car Comparison Tool -->
+<section class="comparison-section">
+    <div class="section-container">
+        <div class="section-header-modern">
+            <div class="section-tag">
+                <i class="fas fa-balance-scale"></i>
+                <span>Compare</span>
+            </div>
+            <h2 class="section-title-modern">Vehicle Comparison Tool</h2>
+            <p class="section-subtitle">Compare specifications side-by-side</p>
+        </div>
+
+        <div class="comparison-grid">
+            <div class="comparison-car">
+                <div class="comparison-header">
+                    <div class="car-image-comp">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Toyota Camry</h3>
+                    <p class="car-price">$28,500</p>
+                    <div class="match-score">
+                        <div class="score-ring" style="--score: 92"></div>
+                        <span class="score-text">92% Match</span>
+                    </div>
+                </div>
+                <div class="comparison-specs">
+                    <div class="spec-row">
+                        <span class="spec-label">Engine</span>
+                        <span class="spec-value">2.5L 4-Cyl</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Horsepower</span>
+                        <span class="spec-value winner">203 HP</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">MPG</span>
+                        <span class="spec-value winner">32 City / 41 Hwy</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">0-60 mph</span>
+                        <span class="spec-value">7.9s</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Seating</span>
+                        <span class="spec-value">5 Passengers</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Safety Rating</span>
+                        <span class="spec-value winner">5★ NHTSA</span>
+                    </div>
+                </div>
+                <button class="compare-btn">Select This Car</button>
+            </div>
+
+            <div class="comparison-car">
+                <div class="comparison-header">
+                    <div class="car-image-comp">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Honda Accord</h3>
+                    <p class="car-price">$27,900</p>
+                    <div class="match-score">
+                        <div class="score-ring" style="--score: 89"></div>
+                        <span class="score-text">89% Match</span>
+                    </div>
+                </div>
+                <div class="comparison-specs">
+                    <div class="spec-row">
+                        <span class="spec-label">Engine</span>
+                        <span class="spec-value">1.5L Turbo</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Horsepower</span>
+                        <span class="spec-value">192 HP</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">MPG</span>
+                        <span class="spec-value">30 City / 38 Hwy</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">0-60 mph</span>
+                        <span class="spec-value winner">7.3s</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Seating</span>
+                        <span class="spec-value">5 Passengers</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Safety Rating</span>
+                        <span class="spec-value winner">5★ NHTSA</span>
+                    </div>
+                </div>
+                <button class="compare-btn">Select This Car</button>
+            </div>
+
+            <div class="comparison-car">
+                <div class="comparison-header">
+                    <div class="car-image-comp">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Nissan Altima</h3>
+                    <p class="car-price">$26,300</p>
+                    <div class="match-score">
+                        <div class="score-ring" style="--score: 85"></div>
+                        <span class="score-text">85% Match</span>
+                    </div>
+                </div>
+                <div class="comparison-specs">
+                    <div class="spec-row">
+                        <span class="spec-label">Engine</span>
+                        <span class="spec-value">2.5L 4-Cyl</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Horsepower</span>
+                        <span class="spec-value">188 HP</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">MPG</span>
+                        <span class="spec-value">28 City / 39 Hwy</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">0-60 mph</span>
+                        <span class="spec-value">8.2s</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Seating</span>
+                        <span class="spec-value">5 Passengers</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Safety Rating</span>
+                        <span class="spec-value">4★ NHTSA</span>
+                    </div>
+                </div>
+                <button class="compare-btn winner">Best Value</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- AI Recommendations -->
+<section class="recommendations-section">
+    <canvas id="recommendationsCanvas"></canvas>
+    <div class="section-container">
+        <div class="section-header-modern">
+            <div class="section-tag">
+                <i class="fas fa-brain"></i>
+                <span>AI Powered</span>
+            </div>
+            <h2 class="section-title-modern">Recommended For You</h2>
+            <p class="section-subtitle">Smart suggestions based on your preferences</p>
+        </div>
+
+        <div class="recommendations-grid">
+            <div class="rec-card">
+                <div class="rec-badge">
+                    <i class="fas fa-star"></i>
+                    <span>Top Pick</span>
+                </div>
+                <div class="rec-image">
+                    <i class="fas fa-car"></i>
+                </div>
+                <div class="rec-content">
+                    <h3>Ford Mustang</h3>
+                    <p class="rec-category">Sports Car • 2024</p>
+                    <div class="rec-match">
+                        <div class="match-bar">
+                            <div class="match-fill" style="width: 96%"></div>
+                        </div>
+                        <span class="match-percentage">96% Match</span>
+                    </div>
+                    <div class="rec-reasons">
+                        <div class="reason-tag">
+                            <i class="fas fa-check"></i>
+                            <span>Budget Match</span>
+                        </div>
+                        <div class="reason-tag">
+                            <i class="fas fa-check"></i>
+                            <span>Performance</span>
+                        </div>
+                        <div class="reason-tag">
+                            <i class="fas fa-check"></i>
+                            <span>Popular Choice</span>
+                        </div>
+                    </div>
+                    <div class="rec-footer">
+                        <span class="rec-price">$32,900</span>
+                        <button class="rec-btn">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="rec-btn primary">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rec-card">
+                <div class="rec-image">
+                    <i class="fas fa-car"></i>
+                </div>
+                <div class="rec-content">
+                    <h3>Mazda CX-5</h3>
+                    <p class="rec-category">SUV • 2024</p>
+                    <div class="rec-match">
+                        <div class="match-bar">
+                            <div class="match-fill" style="width: 91%"></div>
+                        </div>
+                        <span class="match-percentage">91% Match</span>
+                    </div>
+                    <div class="rec-reasons">
+                        <div class="reason-tag">
+                            <i class="fas fa-check"></i>
+                            <span>Safety Features</span>
+                        </div>
+                        <div class="reason-tag">
+                            <i class="fas fa-check"></i>
+                            <span>Fuel Efficient</span>
+                        </div>
+                    </div>
+                    <div class="rec-footer">
+                        <span class="rec-price">$29,800</span>
+                        <button class="rec-btn">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="rec-btn primary">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rec-card">
+                <div class="rec-image">
+                    <i class="fas fa-car"></i>
+                </div>
+                <div class="rec-content">
+                    <h3>Hyundai Sonata</h3>
+                    <p class="rec-category">Sedan • 2024</p>
+                    <div class="rec-match">
+                        <div class="match-bar">
+                            <div class="match-fill" style="width: 88%"></div>
+                        </div>
+                        <span class="match-percentage">88% Match</span>
+                    </div>
+                    <div class="rec-reasons">
+                        <div class="reason-tag">
+                            <i class="fas fa-check"></i>
+                            <span>Warranty</span>
+                        </div>
+                        <div class="reason-tag">
+                            <i class="fas fa-check"></i>
+                            <span>Tech Features</span>
+                        </div>
+                    </div>
+                    <div class="rec-footer">
+                        <span class="rec-price">$26,500</span>
+                        <button class="rec-btn">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="rec-btn primary">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Regional Price Heatmap -->
+<section class="heatmap-section">
+    <div class="section-container">
+        <div class="section-header-modern">
+            <div class="section-tag">
+                <i class="fas fa-map-marked-alt"></i>
+                <span>Regional Data</span>
+            </div>
+            <h2 class="section-title-modern">Price Heatmap by Region</h2>
+            <p class="section-subtitle">Average car prices across different states</p>
+        </div>
+
+        <div class="heatmap-controls">
+            <select class="heatmap-select">
+                <option>All Vehicles</option>
+                <option>Sedans</option>
+                <option>SUVs</option>
+                <option>Trucks</option>
+                <option>Electric</option>
+            </select>
+        </div>
+
+        <div class="heatmap-container">
+            <div class="map-placeholder">
+                <i class="fas fa-map"></i>
+                <p>Interactive US Map</p>
+            </div>
+            <div class="region-cards">
+                <div class="region-card high">
+                    <div class="region-header">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>California</h4>
+                    </div>
+                    <div class="region-price">$35,200</div>
+                    <div class="region-change positive">+4.2% vs National Avg</div>
+                    <div class="region-bar" style="--fill: 85%"></div>
+                </div>
+
+                <div class="region-card medium">
+                    <div class="region-header">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Texas</h4>
+                    </div>
+                    <div class="region-price">$31,800</div>
+                    <div class="region-change neutral">-1.5% vs National Avg</div>
+                    <div class="region-bar" style="--fill: 65%"></div>
+                </div>
+
+                <div class="region-card low">
+                    <div class="region-header">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Florida</h4>
+                    </div>
+                    <div class="region-price">$29,500</div>
+                    <div class="region-change negative">-5.8% vs National Avg</div>
+                    <div class="region-bar" style="--fill: 50%"></div>
+                </div>
+
+                <div class="region-card high">
+                    <div class="region-header">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>New York</h4>
+                    </div>
+                    <div class="region-price">$36,900</div>
+                    <div class="region-change positive">+8.3% vs National Avg</div>
+                    <div class="region-bar" style="--fill: 92%"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="heatmap-legend">
+            <div class="legend-item">
+                <div class="legend-color low"></div>
+                <span>Below Average</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color medium"></div>
+                <span>Average</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color high"></div>
+                <span>Above Average</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ADD MORE SECTIONS IN NEXT FILE DUE TO SIZE -->
